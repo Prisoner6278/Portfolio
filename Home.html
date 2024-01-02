@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.vl {
+  border: 2px solid black;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 1800px;
+}
+
+.Contacts{
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: -550px;
+}
+
+.SoloContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  top: -450px;
+}
+
+hr.solid {
+  border-top: 3px solid black;
+  position: relative;
+  top: -550px;
+}
+
+#ProjectContainer{
+  margin: 200px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -250px;
+}
+
+.ProjectDivider {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  position: relative;
+  top: -100px;
+}
+
+.ProjectDivider::before, .ProjectDivider::after {
+  flex: 1;
+  content: '';
+  padding: 3px;
+  margin: 5px;
+  border-top: 8px solid #000000;
+  border-radius: 5px;
+  position: relative;
+  top: 5px;
+}
+img{
+  width: 20%;
+  height: auto;
+}
+#TextCenter{
+    margin: 200px;
+    justify-content: center; 
+    text-align:left;
+    display:flex;
+}
+div.Section{
+    float:right;
+}
+div.Box{
+   position:absolute;
+   top:0;
+   right:0;
+   margin-right: 20px;
+   margin-top: 10px;
+}
+a:active,  a:focus,  a:hover {
+color:red; 
+}
+a#current:active,  a#current:focus, a#current:hover {
+color:blue;	
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: white;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "|";
+}
+ul.breadcrumb li a {
+  color: black;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: red;
+}
+</style>
+  <title>Lee's Portfolio</title>
+</head>
+<body>
+<!--For Top Right Corner-->
+<div>
+  <div class = "Section">
+      <ul class="breadcrumb">
+          <div class = "Box">
+              <li><a href="#" id="current">Home</a></li>
+              <li><a href="/Users/Lee/Desktop/Portfolio/Resume.pdf">Resume</a></li>
+          </div>
+      </ul>
+  </div>
+</div>
+<!--For Text and Image-->
+<div>
+  <div id = "TextCenter">
+      <img src="test.jpg" alt="Trulli" width="500" height="333">
+      <div>
+          <h1>Do Hwi Lee</h1>
+          <h2>A bit about me.</h2>
+          <p>BlaBlaBla.</p>
+      </div>
+  </div>
+</div>
+
+<!--Line divider-->
+<div class="ProjectDivider">Projects</div>
+
+<!--ProjectContainer-->
+<div id = "ProjectContainer">
+  <!--Final Hour-->
+  <img src="914690.png" alt="error" width="500" height="333">
+  <div>
+      <h3 style = "text-align: center;"><a href="#">Final Hour</a></h3>
+      <p>Lead Narrative Designer/Producer</p>
+  </div>
+
+  <!--Killectables-->
+  <img src="914690.png" alt="error" width="500" height="333">
+  <div>
+      <h3 style = "text-align: center;"><a href="#">Killectables</a></h3>
+      <p>Producer/Narrative Designer</p>
+  </div>
+
+  <!--Wall Game-->
+  <img src="914690.png" alt="error" width="500" height="333">
+  <div>
+      <h3 style = "text-align: center;"><a href="#">Wall Game</a></h3>
+      <p>Producer/Sound Designer</p>
+  </div>
+</div>
+
+<!--Line divider-->
+<div class="ProjectDivider" style = "position: relative; top: -450px;">Personal/Group</div>
+
+<!--Solo/Group Project Divider-->
+<div class = "SoloContainer">
+  <div style = "height : 400px; margin: 20px;">
+    <img src="914690.png" alt="error" style = "text-align: center; width: 433px; height: 300px;">
+    <figcaption style = "text-align: center;"><a href="#">Shooting Range</a></figcaption>
+    <figcaption style = "text-align: center;">Solo Dev</figcaption>
+  </div>
+  
+  <div class="vl" style = "position: relative; top: -35px"></div>
+
+  <div style = "height : 400px; margin: 20px">
+    <img src="914690.png" alt="error" style = "text-align: center; width: 433px; height: 300px;">
+    <figcaption style = "text-align: center;"><a href="#">Shatter</a></figcaption>
+    <figcaption style = "text-align: center;">Programmer</figcaption>
+  </div>
+</div>
+
+<hr class="solid">
+
+<div class = "Contacts">
+  <div>
+    <h2>Email</h2>
+    <p>qnyt123456@gmail.com</p>
+  </div>
+  
+  <div>
+    <h2>Follow Me</h2>
+    <a href="https://www.linkedin.com/in/do-hwi-lee-244042229/" class="social-icon si-rounded si-small si-linkedin" target="_blank">
+      <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+   </a>
+  </div>  
+</div>
+
+</body>
+</html>
