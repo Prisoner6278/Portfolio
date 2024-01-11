@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+hr.solid {
+  border-top: 3px solid black;
+}    
+.Contacts{
+  display: flex;
+  justify-content: space-evenly;
+}   
+hr.rounded {
+  border-top: 8px solid black;
+  border-radius: 5px;
+  width: 40%;
+}
+div.Section{
+    float:right;
+}
+div.Box{
+   position:absolute;
+   top:0;
+   right:0;
+   margin-right: 20px;
+   margin-top: 10px;
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: white;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "|";
+}
+ul.breadcrumb li a {
+  color: black;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: red;
+}
+
+</style>
+</head>
+<!--For Top Right Corner-->
+<body>
+<div>
+    <div class = "Section">
+        <ul class="breadcrumb">
+            <div class = "Box">
+                <li><a href="Home.html" id="current">Home</a></li>
+                <li><a href="/Users/Lee/Desktop/Portfolio/Resume.pdf">Resume</a></li>
+            </div>
+        </ul>
+    </div>
+</div>
+
+<!--Title-->
+<h1 style = "text-align: center; margin-top: 100px;">Final Hour</h1>
+
+<!--Divider-->
+<hr class="rounded">
+
+<!--Image-->
+<img src="./Images/Final_Hour_1.webp" alt="error" style = "display:block; margin-left: auto; margin-right: auto; width: 40%;">
+
+<p style = "display:block; margin-left: auto; margin-right: auto; width: 40%;">Final Hour is a narrative driven 2D game made by Unity engine. The year is around 2030 and the world is about to end by a super-nova that is approximately 400 light years away. You are a young child that has not been socialized but finally decides to leave the terrible orphanage and explore the world.</p>
+
+<p style = "display:block; margin-left: auto; margin-right: auto; width: 40%; text-align: center; margin-top: 100px;"><a href="https://clynomaniac.itch.io/final-hour">Go Play!</a></p>
+
+<h2 style = "display:block; margin-left: auto; margin-right: auto; width: 40%;">My Experiences</h2>
+
+<p style = "display:block; margin-left: auto; margin-right: auto; width: 40%;">My work only world building and narrative design. The beginning of the development was on track however, there were things that was problematic for programmers and artists so there were times that we had to cut some of the characters and narratives. It was stressful and fun at the same time.</p>
+
+<video style = "display:block; margin-left: auto; margin-right: auto; width: 40%;" controls>
+    <source src="./Vidoes/FInalHourVideo.mp4" type="video/mp4"></video>
+
+<hr class="solid">    
+
+<!--Contacts-->
+<div class = "Contacts">
+    <div>
+        <h2>Email</h2>
+        <p>qnyt123456@gmail.com</p>
+    </div>
+    
+    <div>
+        <h2>Follow Me</h2>
+        <a href="https://www.linkedin.com/in/do-hwi-lee-244042229/" class="social-icon si-rounded si-small si-linkedin" target="_blank">
+        <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+        </a>
+    </div>
+    
+    <div style = "text-align: center; display: flex; align-items: center;">@2024 By Do Hwi Lee</div>
+</div>    
+</body>
+</html>    

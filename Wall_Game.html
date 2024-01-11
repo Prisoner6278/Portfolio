@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+hr.solid {
+  border-top: 3px solid black;
+}    
+.Contacts{
+  display: flex;
+  justify-content: space-evenly;
+}   
+hr.rounded {
+  border-top: 8px solid black;
+  border-radius: 5px;
+  width: 40%;
+}
+div.Section{
+    float:right;
+}
+div.Box{
+   position:absolute;
+   top:0;
+   right:0;
+   margin-right: 20px;
+   margin-top: 10px;
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: white;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "|";
+}
+ul.breadcrumb li a {
+  color: black;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: red;
+}
+
+</style>
+</head>
+<!--For Top Right Corner-->
+<body>
+<div>
+    <div class = "Section">
+        <ul class="breadcrumb">
+            <div class = "Box">
+                <li><a href="Home.html" id="current">Home</a></li>
+                <li><a href="/Users/Lee/Desktop/Portfolio/Resume.pdf">Resume</a></li>
+            </div>
+        </ul>
+    </div>
+</div>
+
+<!--Title-->
+<h1 style = "text-align: center; margin-top: 100px;">Wall Game(AR Project)</h1>
+
+<!--Divider-->
+<hr class="rounded">
+
+<!--Image-->
+<img src="./Images/WallGame.png" alt="error" style = "display:block; margin-left: auto; margin-right: auto; width: 40%;">
+<img src="./Images/Wall2.png" alt="error" style = "display:block; margin-left: auto; margin-right: auto; width: 40%;">
+
+<p style = "display:block; margin-left: auto; margin-right: auto; width: 40%;">
+    AR Project
+    In Progress
+    This AR project was for a client that wanted a game that customers can play in front of a camera. Most of my work was implementing a code for sound system and edited musics and sound effects. </p>
+
+<p style = "display:block; margin-left: auto; margin-right: auto; width: 40%; text-align: center; margin-top: 100px;"><a href="https://qnyt123.itch.io/holeinthewall">Download!</a></p>
+
+<h2 style = "display:block; margin-left: auto; margin-right: auto; width: 40%;">My Experiences</h2>
+
+<p style = "display:block; margin-left: auto; margin-right: auto; width: 40%;">This project was one of the fun project that I have ever participated. My work on this project was implementing sound system, editing musics, and adding sounds.</p>
+
+<video style = "display:block; margin-left: auto; margin-right: auto; width: 40%;" controls>
+    <source src="./Vidoes/WallGame.mp4" type="video/mp4"></video>
+
+<hr class="solid">    
+
+<!--Contacts-->
+<div class = "Contacts">
+    <div>
+        <h2>Email</h2>
+        <p>qnyt123456@gmail.com</p>
+    </div>
+    
+    <div>
+        <h2>Follow Me</h2>
+        <a href="https://www.linkedin.com/in/do-hwi-lee-244042229/" class="social-icon si-rounded si-small si-linkedin" target="_blank">
+        <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+        </a>
+    </div>
+    
+    <div style = "text-align: center; display: flex; align-items: center;">@2024 By Do Hwi Lee</div>
+</div>    
+</body>
+</html> 
