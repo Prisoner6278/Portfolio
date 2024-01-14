@@ -4,8 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel ="MasterCSS" href = "Master.css">
 <style>
+body{
+  animation: transitionIn;
+  animation-duration: 0.75s;
+}
+
+@keyframes transitionIn {
+    from {
+      opacity: 0;
+      animation: translate(-10px);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+  }  
 hr.solid {
   border-top: 3px solid black;
 }    
@@ -18,15 +33,13 @@ hr.rounded {
   border-radius: 5px;
   width: 40%;
 }
-div.Section{
-    float:right;
-}
 div.Box{
-   position:absolute;
+  float:right;
+  position:relative;
    top:0;
    right:0;
    margin-right: 20px;
-   margin-top: 10px;
+   margin-top: 0px;
 }
 ul.breadcrumb {
   padding: 10px 16px;
@@ -53,17 +66,14 @@ ul.breadcrumb li a:hover {
 </style>
 </head>
 <!--For Top Right Corner-->
+
 <body>
-<div>
-    <div class = "Section">
-        <ul class="breadcrumb">
-            <div class = "Box">
-                <li><a href="index.html" id="current">Home</a></li>
-                <li><a href="/Users/Lee/Desktop/Portfolio/Resume.pdf">Resume</a></li>
-            </div>
-        </ul>
-    </div>
-</div>
+<ul class="breadcrumb">
+  <div class = "Box">
+      <li><a href="index.html" id="current">Home</a></li>
+      <li><a href="/Users/Lee/Desktop/Portfolio/Resume.pdf">Resume</a></li>
+  </div>
+</ul>
 
 <!--Title-->
 <h1 style = "text-align: center; margin-top: 100px;">Killectibles</h1>

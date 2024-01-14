@@ -4,8 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel ="MasterCSS" href = "Master.css">
 <style>
+  
+body{
+  animation: transitionIn;
+  animation-duration: 0.75s;
+}
+
+@keyframes transitionIn {
+    from {
+      opacity: 0;
+      animation: translate(-10px);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+  } 
 hr.dashed {
   border-top: 3px dashed black;
 }
@@ -78,16 +94,18 @@ img{
     justify-content: center; 
     text-align:left;
     display:flex;
+    margin-top: 50px;
 }
 div.Section{
     float:right;
+    margin-top: -60px;
 }
 div.Box{
-   position:absolute;
+   position:relative;
    top:0;
    right:0;
    margin-right: 20px;
-   margin-top: 10px;
+   margin-top: 0px;
 }
 a:active,  a:focus,  a:hover {
 color:red; 
@@ -119,22 +137,21 @@ ul.breadcrumb li a:hover {
 </style>
   <title>Lee's Portfolio</title>
 </head>
-<body style = "margin: 0;
-padding: 0;
-height: 1800px;">
+
+<body style = "margin: 0; padding: 0; height: 1900px;">
 <!--For Top Right Corner-->
-<div>
-  <div class = "Section">
-      <ul class="breadcrumb">
-          <div class = "Box">
-              <li><a href="index.html" id="current">Home</a></li>
-              <li><a href="/Users/Lee/Desktop/Portfolio/Resume.pdf">Resume</a></li>
-          </div>
-      </ul>
-  </div>
+
+<div class = "Section">
+    <ul class="breadcrumb">
+        <div class = "Box">
+            <li><a href="index.html" id="current">Home</a></li>
+            <li><a href="/Users/Lee/Desktop/Portfolio/Resume.pdf">Resume</a></li>
+        </div>
+    </ul>
 </div>
+
 <!--For Text and Image-->
-<div>
+
   <div id = "TextCenter">
       <img src="./Images/ProfilePic.webp" alt="Avatar" style="width:200px; border-radius: 50%; margin-right: 30px;">
       <div>
@@ -143,7 +160,7 @@ height: 1800px;">
           <p>I am a QA/Producer who enjoys overseeing the progress of game development and breaking the game mechanics!</p>
       </div>
   </div>
-</div>
+
 
 <!--Line divider-->
 <div class="ProjectDivider">Projects</div>
