@@ -5,6 +5,28 @@
     --max: 2300px;
 }
 
+
+/* Global layout safety for mobile (prevents 1–8px “right gap” from horizontal overflow) */
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip; /* modern */
+  overflow-x: hidden; /* fallback */
+}
+
+/* Media elements should never exceed viewport width */
+img, svg, video, canvas{
+  max-width: 100%;
+  height: auto;
+}
+
+
 /* 폰트 변경 */
 body {
     margin: 0;
@@ -235,6 +257,9 @@ body {
 
 .top-bg {
     background: #f3f4f6; /* 원하는 회색으로 변경 */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
 }
 
 .projects {
@@ -423,11 +448,6 @@ body {
     font-size: 13px;
 }
 
-.text-link.title-underline {
-    border-bottom-color: currentColor;
-}
-
-
 /* -----------------------------------------------------------
    Responsive + Mobile Navigation (Hamburger)
    ----------------------------------------------------------- */
@@ -436,9 +456,10 @@ body {
   display:none;
   margin-left:auto;
   background: transparent;
-  border: 1px solid rgba(17,17,17,0.18);
-  border-radius: 14px;
-  padding: 10px 12px;
+  border: 0;
+  padding: 0;
+  width: 44px;
+  height: 44px;
   line-height: 0;
   cursor: pointer;
 }
@@ -450,8 +471,8 @@ body {
 
 .nav-toggle .hamburger-icon{
   display:block;
-  width: 24px;
-  height: 24px;
+  width: 44px;
+  height: 44px;
 }
 
 .nav-toggle .bar{
