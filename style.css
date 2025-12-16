@@ -292,5 +292,83 @@ body {
     line-height: 1.5;
 }
 
+.case-hero {
+    padding-bottom: 40px;
+}
+
+.case-title {
+    margin: 0;
+    font-size: clamp(34px, 2.6vw, 54px);
+    letter-spacing: -0.03em;
+}
+
+.case-lede {
+    margin: 14px 0 0;
+    font-size: clamp(18px, 1.3vw, 22px);
+    line-height: 1.6;
+    color: var(--muted);
+    max-width: 85ch;
+}
+
+.case-body {
+    padding: 56px 0 84px;
+}
+
+.case-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.case-block h2 {
+    margin: 0 0 12px;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+}
+
+.case-card {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 18px;
+    padding: 16px 18px;
+}
+
+.evidence-title {
+    margin: 44px 0 14px;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+}
+
+.evidence-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.evidence img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 18px;
+    border: 1px solid rgba(0,0,0,0.08);
+}
+
+.evidence figcaption {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.case-note {
+    margin-top: 16px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.text-link.title-underline {
+    border-bottom-color: currentColor;
+}
 
 
