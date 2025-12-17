@@ -9,8 +9,8 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><script defer="defer" src="script.js"></script>
-<link href="style.css" rel="stylesheet"/>
-</head>
+<link href="style.css" rel="stylesheet">
+</link></head>
 <body>
 <div class="top-bg">
 <header class="site-header">
@@ -26,7 +26,7 @@
 <a class="nav-link" href="resume.html">Resume</a>
 <a class="nav-link" href="contact.html">Contact</a>
 <a aria-label="LinkedIn profile (opens in a new tab)" class="icon-link" href="https://www.linkedin.com/in/do-hwi-lee-244042229/" rel="noopener noreferrer" target="_blank">
-<svg aria-hidden="true" class="icon" role="img" viewBox="0 0 24 24">
+<svg aria-hidden="true" class="icon" role="img" viewbox="0 0 24 24">
 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.37-1.852 3.6 0 4.265 2.368 4.265 5.455v6.288zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.814 20.452H3.86V9h2.954v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"></path>
 </svg>
 </a>
@@ -37,147 +37,172 @@
 <section class="case-body">
 <div class="container">
 <div class="case-grid">
-      <div class="case-block">
-        <h2>Core responsibilities</h2>
-        <ul class="project-bullets">
-          <li>Owned milestone planning and a weekly cadence (priorities, blockers, dependencies, decisions).</li>
-          <li>Structured work breakdown (epics → tasks) with clear owners and acceptance criteria.</li>
-          <li>Protected scope boundaries by clarifying trade-offs, cut lines, and next actions.</li>
-          <li>Supported ship readiness through risk reviews and go/no-go criteria to reduce last-minute surprises.</li>
-        </ul>
-      </div>
+<div class="case-block">
+<h2>Core responsibilities</h2>
+<ul class="project-bullets">
+<li>Owned milestone planning and a weekly cadence (priorities, blockers, dependencies).</li>
+<li>Structured work breakdown (epics → tasks) with clear acceptance criteria.</li>
+<li>Supported ship readiness by clarifying risks, scope boundaries, and next actions.</li>
+<li>Established triage + verification habits to reduce regressions and improve release confidence.</li>
+</ul>
+</div>
+<div class="case-block">
+  <h2>Final Hour media</h2>
 
-      <div class="case-block">
-        <h2>Production operating system</h2>
-        <ul class="project-bullets">
-          <li><b>Cadence:</b> weekly planning + mid-week risk check + stakeholder update</li>
-          <li><b>Visibility:</b> milestone definitions, owners, acceptance criteria, dependency ordering</li>
-          <li><b>Decision-making:</b> decision log to close open debates and prevent repeated discussions</li>
-          <li><b>Risk control:</b> RAID-style tracking</li>
-        </ul>
-      </div>
+  <div class="gallery" data-gallery aria-label="Final Hour media gallery" tabindex="0">
+    <div class="gallery-main">
+      <button class="gallery-nav prev" type="button" aria-label="Previous">‹</button>
+
+      <figure class="gallery-figure">
+        <img class="gallery-image" alt="Final Hour screenshot" src="Images/Final%20Hour%201.webp"/>
+        <video class="gallery-video" controls preload="metadata" playsinline style="display:none;" poster="Images/FinalHourHome.png">
+          <source src="Videos/finalhour-video.mp4" type="video/mp4"/>
+          Sorry, your browser does not support embedded videos.
+        </video>
+
+        <figcaption class="gallery-caption">
+          <span class="gallery-count" aria-live="polite">1 / 4</span>
+          <span class="gallery-caption-text">Unity scene (interior)</span>
+        </figcaption>
+      </figure>
+
+      <button class="gallery-nav next" type="button" aria-label="Next">›</button>
     </div>
 
-<h2 class="evidence-title">Use of Jira &amp; Screens</h2>
+    <div class="gallery-thumbs" aria-label="Thumbnail navigation">
+      <button class="thumb active" type="button"
+        data-type="image"
+        data-src="Images/Final%20Hour%201.webp"
+        data-caption="Unity scene (interior)"
+        aria-label="Show image 1">
+        <img alt="" src="Images/Final%20Hour%201.webp"/>
+      </button>
 
-    <div class="evidence-split">
-      <!-- Left: Jira (half width) -->
-      <div class="evidence-panel">
-        <h3 class="evidence-subtitle">Jira Timeline</h3>
-        <figure class="evidence">
-          <img class="evidence-img" alt="Jira timeline screenshot (anonymized)" src="Images/jira.png"/>
-        </figure>
-      </div>
+      <button class="thumb" type="button"
+        data-type="image"
+        data-src="Images/Final%20Hour%202.png"
+        data-caption="Overworld (forest)"
+        aria-label="Show image 2">
+        <img alt="" src="Images/Final%20Hour%202.png"/>
+      </button>
 
-      <!-- Right: Titanfall-style gallery (images + optional video slide) -->
-      <div class="evidence-panel">
-        <h3 class="evidence-subtitle">Final Hour — Media</h3>
+      <button class="thumb" type="button"
+        data-type="image"
+        data-src="Images/Final%20Hour%203.png"
+        data-caption="Dialogue scene (night)"
+        aria-label="Show image 3">
+        <img alt="" src="Images/Final%20Hour%203.png"/>
+      </button>
 
-        <div class="gallery" data-gallery aria-label="Final Hour media gallery" tabindex="0">
-          <div class="gallery-main">
-            <button class="gallery-nav prev" type="button" aria-label="Previous">‹</button>
-
-            <figure class="gallery-figure">
-              <!-- We keep BOTH elements and toggle visibility in JS -->
-              <img class="gallery-image" alt="Final Hour screenshot" src="Images/Final%20Hour%201.webp"/>
-              <video class="gallery-video" controls preload="metadata" playsinline style="display:none;" poster="Images/FinalHourHome.png">
-                <source src="Videos/finalhour-video.mp4" type="video/mp4"/>
-                Sorry, your browser does not support embedded videos.
-              </video>
-
-              <figcaption class="gallery-caption">
-                <span class="gallery-count" aria-live="polite">1 / 4</span>
-                <span class="gallery-caption-text">Unity scene (interior)</span>
-              </figcaption>
-            </figure>
-
-            <button class="gallery-nav next" type="button" aria-label="Next">›</button>
-          </div>
-
-          <div class="gallery-thumbs" aria-label="Thumbnail navigation">
-            <button class="thumb active" type="button"
-              data-type="image"
-              data-src="Images/Final%20Hour%201.webp"
-              data-caption="Unity scene (interior)"
-              aria-label="Show image 1">
-              <img alt="" src="Images/Final%20Hour%201.webp"/>
-            </button>
-
-            <button class="thumb" type="button"
-              data-type="image"
-              data-src="Images/Final%20Hour%202.png"
-              data-caption="Overworld (forest)"
-              aria-label="Show image 2">
-              <img alt="" src="Images/Final%20Hour%202.png"/>
-            </button>
-
-            <button class="thumb" type="button"
-              data-type="image"
-              data-src="Images/Final%20Hour%203.png"
-              data-caption="Dialogue scene (night)"
-              aria-label="Show image 3">
-              <img alt="" src="Images/Final%20Hour%203.png"/>
-            </button>
-
-            <button class="thumb thumb-video" type="button"
-              data-type="video"
-              data-src="Videos/finalhour-video.mp4"
-              data-poster="Images/FinalHourHome.png"
-              data-caption="Gameplay video"
-              aria-label="Show video">
-              <img alt="" src="Images/FinalHourHome.png"/>
-              <span class="thumb-play" aria-hidden="true">▶</span>
-            </button>
-          </div>
-        </div>
-
-      </div>
+      <button class="thumb thumb-video" type="button"
+        data-type="video"
+        data-src="Videos/finalhour-video.mp4"
+        data-poster="Images/FinalHourHome.png"
+        data-caption="Gameplay video"
+        aria-label="Show video">
+        <img alt="" src="Images/FinalHourHome.png"/>
+        <span class="thumb-play" aria-hidden="true">▶</span>
+      </button>
     </div>
+  </div>
+</div>
+</div>
+<div class="case-block">
+<h2>Supporting case</h2>
+<div class="case-row">
 
-<h2 class="evidence-title">Case studies</h2>
-    <div class="case-studies-grid">
+<div class="case-card">
+  <h3>Case 01 — Milestone slippage control</h3>
+  <ul class="project-bullets">
+    <li><b>Context:</b> Milestones started slipping due to unclear weekly priorities and ownership across disciplines.</li>
+    <li><b>Actions:</b> Set up a weekly planning cadence in Trello (by week), assigned owners, and used discipline labels to surface blockers early.</li>
+    <li><b>Impact:</b> <b>Reduced milestone delay frequency</b> by improving visibility and tightening weekly execution.</li>
+    <li><b>Evidence:</b> Trello weekly board (planning cadence + ownership).</li>
+  </ul>
 
-      <div class="case-card">
-        <h3>01) Milestone planning &amp; scheduling (Producer)</h3>
-        <ul class="project-bullets">
-          <li><b>Scale:</b> Team 12 (Narrative 3, Art 4, Programmer 2, Sound 2, Producer 1)</li>
-          <li><b>Context:</b> Needed a clear plan to coordinate multiple workstreams with shared dependencies.</li>
-          <li><b>Actions:</b> Broke down work into trackable items, sequenced dependencies, and scheduled milestones on a timeline.</li>
-          <li><b>Impact:</b> Decreased the frequency of milestone delays by making scope changes explicit and owned.</li>
-          <li><b>Artifacts:</b> Milestone definitions + acceptance criteria, dependency notes, Jira Timeline (anonymized).</li>
-        </ul>
-      </div>
+  <figure class="artifact" data-lightbox>
+    <img src="Images/trello_board.png" alt="Trello weekly board view showing week-based lists, labels, and assignees."/>
+    <figcaption class="artifact-caption">Trello board view — weekly planning cadence.</figcaption>
+  </figure>
+</div>
 
-      <div class="case-card">
-        <h3>02) Scope &amp; dependency reset</h3>
-        <ul class="project-bullets">
-          <li><b>Scale:</b> Duration 6 months / Milestones 4</li>
-          <li><b>Context:</b> Competing priorities and unclear dependency order were causing drift and rework.</li>
-          <li><b>Actions:</b> Mapped dependencies, defined cut lines (in/out of scope), and re-baselined milestones with owners and criteria — including removing several non-critical characters to reduce workload.</li>
-          <li><b>Impact:</b> Reduced workload through scope cuts to ship on time while maintaining clarity around “done” for each milestone.</li>
-          <li><b>Artifacts:</b> Dependency map snapshot, milestone sheet (owners + criteria + cut lines), decision log excerpt.</li>
-        </ul>
-      </div>
+<div class="case-card">
+  <h3>Case 02 — Scope reduction to hit ship date</h3>
+  <ul class="project-bullets">
+    <li><b>Context:</b> Narrative scope threatened the schedule late in the milestone.</li>
+    <li><b>Actions:</b> Cut a small number of characters / lines and re-baselined remaining work to protect the release date.</li>
+    <li><b>Impact:</b> <b>Reduced workload</b> and kept the project on track for an on-time release.</li>
+    <li><b>Evidence:</b> Trello table view (task-level tracking with labels/owners).</li>
+  </ul>
 
-      <div class="case-card">
-        <h3>03) Decision &amp; stakeholder alignment cadence</h3>
-        <ul class="project-bullets">
-          <li><b>Scale:</b> Stakeholders: Lead Narrative, Programmer, Art / Update cadence: weekly</li>
-          <li><b>Context:</b> Information was scattered across tools and conversations; decisions stayed open too long.</li>
-          <li><b>Actions:</b> Standardized weekly updates around the CSV → Unity content pipeline (what changed / what’s at risk / what decisions are needed) and maintained a decision log.</li>
-          <li><b>Impact:</b> Reduced cross-team back-and-forth and unblocked content integration by clarifying ownership, acceptance criteria, and decision closure for the CSV → Unity handoff.</li>
-          <li><b>Artifacts:</b> Weekly update format, decision log excerpt, RAID-style risk list (incl. CSV → Unity integration risks).</li>
-        </ul>
-      </div>
+  <figure class="artifact" data-lightbox>
+    <img src="Images/trello_table.png" alt="Trello table view with cards, lists, labels, members, and due dates."/>
+    <figcaption class="artifact-caption">Trello table view — task-level tracking.</figcaption>
+  </figure>
+</div>
 
-    </div>
+<div class="case-card">
+  <h3>Case 03 — Pipeline improvement for narrative updates</h3>
+  <ul class="project-bullets">
+    <li><b>Stakeholders:</b> Lead Narrative, Programmer, Art.</li>
+    <li><b>Change:</b> Implemented a CSV-to-Unity update flow to reduce manual edits and keep content updates consistent.</li>
+    <li><b>Impact:</b> Improved turnaround time for narrative updates and reduced manual error risk during iteration.</li>
+    <li><b>Evidence:</b> Trello dashboard (work distribution + label coverage).</li>
+  </ul>
 
+  <figure class="artifact" data-lightbox>
+    <img src="Images/trello_dashboard.png" alt="Trello dashboard charts showing cards per list, per due date, per member, and per label."/>
+    <figcaption class="artifact-caption">Trello dashboard — distribution and progress snapshot.</figcaption>
+  </figure>
+</div>
+</div>
+</div>
 </div>
 </section>
+<div class="artifact-lightbox" id="artifactLightbox" aria-hidden="true">
+  <button class="artifact-lightbox-close" type="button" aria-label="Close">×</button>
+  <img class="artifact-lightbox-img" alt=""/>
+  <p class="artifact-lightbox-caption"></p>
+</div>
 
+<script>
+(function(){
+  const lb = document.getElementById('artifactLightbox');
+  if(!lb) return;
+  const lbImg = lb.querySelector('.artifact-lightbox-img');
+  const lbCap = lb.querySelector('.artifact-lightbox-caption');
+  const closeBtn = lb.querySelector('.artifact-lightbox-close');
 
+  function open(src, alt, cap){
+    lbImg.src = src;
+    lbImg.alt = alt || '';
+    lbCap.textContent = cap || '';
+    lb.classList.add('open');
+    lb.setAttribute('aria-hidden', 'false');
+  }
+  function close(){
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden', 'true');
+    lbImg.src = '';
+  }
 
+  document.querySelectorAll('[data-lightbox] img').forEach(img => {
+    img.addEventListener('click', () => {
+      const fig = img.closest('figure');
+      const capEl = fig ? fig.querySelector('figcaption') : null;
+      open(img.src, img.alt, capEl ? capEl.textContent : '');
+    });
+  });
 
+  lb.addEventListener('click', (e) => {
+    if(e.target === lb) close();
+  });
+  if(closeBtn) closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') close();
+  });
+})();
+</script>
 <script>
 (function(){
   function initGallery(root){
@@ -196,9 +221,7 @@
     let index = thumbs.findIndex(t => t.classList.contains('active'));
     if(index < 0) index = 0;
 
-    function stopVideo(){
-      try { videoEl.pause(); } catch(_) {}
-    }
+    function stopVideo(){ try { videoEl.pause(); } catch(_) {} }
 
     function showImage(src, cap){
       stopVideo();
@@ -208,7 +231,7 @@
       imgEl.alt = cap ? ('Final Hour — ' + cap) : 'Final Hour screenshot';
     }
 
-    function showVideo(src, poster, cap){
+    function showVideo(src, poster){
       imgEl.style.display = 'none';
       videoEl.style.display = 'block';
       if(poster) videoEl.setAttribute('poster', poster);
@@ -216,7 +239,6 @@
         videoSource.setAttribute('src', src);
         try { videoEl.load(); } catch(_) {}
       }
-      // Do not autoplay. User starts playback via controls.
     }
 
     function setActive(i){
@@ -228,7 +250,7 @@
       const cap = t.getAttribute('data-caption') || '';
       const poster = t.getAttribute('data-poster') || '';
 
-      if(type === 'video') showVideo(src, poster, cap);
+      if(type === 'video') showVideo(src, poster);
       else showImage(src, cap);
 
       if(captionText) captionText.textContent = cap;
@@ -254,7 +276,6 @@
       if(e.key === 'End') setActive(thumbs.length - 1);
     });
 
-    // Swipe
     let startX = null;
     root.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, { passive: true });
     root.addEventListener('touchend', (e) => {
@@ -273,6 +294,5 @@
   document.querySelectorAll('[data-gallery]').forEach(initGallery);
 })();
 </script>
-
 </body>
 </html>
