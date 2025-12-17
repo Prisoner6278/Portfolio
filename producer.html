@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><script defer="defer" src="script.js"></script>
-<link href="style.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
 <div class="top-bg">
@@ -26,7 +26,7 @@
 <a class="nav-link" href="resume.html">Resume</a>
 <a class="nav-link" href="contact.html">Contact</a>
 <a aria-label="LinkedIn profile (opens in a new tab)" class="icon-link" href="https://www.linkedin.com/in/do-hwi-lee-244042229/" rel="noopener noreferrer" target="_blank">
-<svg aria-hidden="true" class="icon" role="img" viewbox="0 0 24 24">
+<svg aria-hidden="true" class="icon" role="img" viewBox="0 0 24 24">
 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.37-1.852 3.6 0 4.265 2.368 4.265 5.455v6.288zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.814 20.452H3.86V9h2.954v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"></path>
 </svg>
 </a>
@@ -81,7 +81,7 @@
               <!-- We keep BOTH elements and toggle visibility in JS -->
               <img class="gallery-image" alt="Final Hour screenshot" src="Images/Final%20Hour%201.webp"/>
               <video class="gallery-video" controls preload="metadata" playsinline style="display:none;" poster="Images/FinalHourHome.png">
-                <source src="finalhour-video.mp4" type="video/mp4"/>
+                <source src="Videos/finalhour-video.mp4" type="video/mp4"/>
                 Sorry, your browser does not support embedded videos.
               </video>
 
@@ -121,7 +121,7 @@
 
             <button class="thumb thumb-video" type="button"
               data-type="video"
-              data-src="finalhour-video.mp4"
+              data-src="Videos/finalhour-video.mp4"
               data-poster="Images/FinalHourHome.png"
               data-caption="Gameplay video"
               aria-label="Show video">
@@ -129,10 +129,6 @@
               <span class="thumb-play" aria-hidden="true">▶</span>
             </button>
           </div>
-
-          <p class="case-note" style="margin-top:10px;">
-            Video file must exist at <code>finalhour-video.mp4</code>. Keep filenames lowercase on GitHub Pages.
-          </p>
         </div>
 
       </div>
@@ -144,7 +140,7 @@
       <div class="case-card">
         <h3>01) Milestone planning &amp; scheduling (Producer)</h3>
         <ul class="project-bullets">
-          <li><b>Scale:</b> Team 12 (Narrative 3, Art 4, Programmer 2, Sound 2, Producer 1) / Duration 6 months / Workstreams Core Gameplay + content integration</li>
+          <li><b>Scale:</b> Team 12 (Narrative 3, Art 4, Programmer 2, Sound 2, Producer 1)</li>
           <li><b>Context:</b> Needed a clear plan to coordinate multiple workstreams with shared dependencies.</li>
           <li><b>Actions:</b> Broke down work into trackable items, sequenced dependencies, and scheduled milestones on a timeline.</li>
           <li><b>Impact:</b> Decreased the frequency of milestone delays by making scope changes explicit and owned.</li>
@@ -155,7 +151,7 @@
       <div class="case-card">
         <h3>02) Scope &amp; dependency reset</h3>
         <ul class="project-bullets">
-          <li><b>Scale:</b> Team 12 / Duration 6 months / Milestones 4</li>
+          <li><b>Scale:</b> Duration 6 months / Milestones 4</li>
           <li><b>Context:</b> Competing priorities and unclear dependency order were causing drift and rework.</li>
           <li><b>Actions:</b> Mapped dependencies, defined cut lines (in/out of scope), and re-baselined milestones with owners and criteria — including removing several non-critical characters to reduce workload.</li>
           <li><b>Impact:</b> Reduced workload through scope cuts to ship on time while maintaining clarity around “done” for each milestone.</li>
@@ -176,7 +172,6 @@
 
     </div>
 
-</div>
 </div>
 </section>
 
