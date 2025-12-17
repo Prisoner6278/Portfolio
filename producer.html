@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -8,8 +8,8 @@
 <meta content="Producer / Production Support case study with planning cadence, triage, and release readiness artifacts." name="description"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><script defer src="script.js"></script>
-<link href="style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><script defer="defer" src="script.js"></script>
+<link href="style.css" rel="stylesheet">
 </head>
 <body>
 <div class="top-bg">
@@ -69,54 +69,73 @@
         </figure>
       </div>
 
-      <!-- Right: Screenshot rotation (Titanfall-style) -->
+      <!-- Right: Titanfall-style gallery (images + optional video slide) -->
       <div class="evidence-panel">
-        <h3 class="evidence-subtitle">Final Hour — Screens (rotation)</h3>
+        <h3 class="evidence-subtitle">Final Hour — Media</h3>
 
-        <div class="gallery" data-gallery aria-label="Final Hour screenshot gallery" tabindex="0">
+        <div class="gallery" data-gallery aria-label="Final Hour media gallery" tabindex="0">
           <div class="gallery-main">
-            <button class="gallery-nav prev" type="button" aria-label="Previous image">‹</button>
+            <button class="gallery-nav prev" type="button" aria-label="Previous">‹</button>
 
             <figure class="gallery-figure">
-              <img class="gallery-image" alt="Final Hour screenshot" src="Images/Final%20Hour%201.webp" style="display:none;"/>
-              <video class="gallery-video" controls preload="metadata" playsinline poster="Images/FinalHourHome.png">
-                <source src="Videos/FinalHourVideo.mp4" type="video/mp4"/>
+              <!-- We keep BOTH elements and toggle visibility in JS -->
+              <img class="gallery-image" alt="Final Hour screenshot" src="Images/Final%20Hour%201.webp"/>
+              <video class="gallery-video" controls preload="metadata" playsinline style="display:none;" poster="Images/FinalHourHome.png">
+                <source src="finalhour-video.mp4" type="video/mp4"/>
                 Sorry, your browser does not support embedded videos.
               </video>
+
               <figcaption class="gallery-caption">
                 <span class="gallery-count" aria-live="polite">1 / 4</span>
-                <span class="gallery-caption-text">Gameplay video (preview)</span>
+                <span class="gallery-caption-text">Unity scene (interior)</span>
               </figcaption>
             </figure>
 
-            <button class="gallery-nav next" type="button" aria-label="Next image">›</button>
+            <button class="gallery-nav next" type="button" aria-label="Next">›</button>
           </div>
 
           <div class="gallery-thumbs" aria-label="Thumbnail navigation">
             <button class="thumb active" type="button"
-              data-type="video"
-              data-src="Videos/FinalHourVideo.mp4"
-              data-poster="Images/FinalHourHome.png"
-              data-caption="Gameplay video (preview)"
-              aria-label="Show video">
-              <img alt="" src="Images/FinalHourHome.png"/>
-            </button>
-
-            <button class="thumb" type="button" data-type="image" data-src="Images/Final%20Hour%201.webp" data-caption="Unity scene (interior)" aria-label="Show image 1">
+              data-type="image"
+              data-src="Images/Final%20Hour%201.webp"
+              data-caption="Unity scene (interior)"
+              aria-label="Show image 1">
               <img alt="" src="Images/Final%20Hour%201.webp"/>
             </button>
-            <button class="thumb" type="button" data-type="image" data-src="Images/Final%20Hour%202.png" data-caption="Overworld (forest)" aria-label="Show image 2">
+
+            <button class="thumb" type="button"
+              data-type="image"
+              data-src="Images/Final%20Hour%202.png"
+              data-caption="Overworld (forest)"
+              aria-label="Show image 2">
               <img alt="" src="Images/Final%20Hour%202.png"/>
             </button>
-            <button class="thumb" type="button" data-type="image" data-src="Images/Final%20Hour%203.png" data-caption="Dialogue scene (night)" aria-label="Show image 3">
+
+            <button class="thumb" type="button"
+              data-type="image"
+              data-src="Images/Final%20Hour%203.png"
+              data-caption="Dialogue scene (night)"
+              aria-label="Show image 3">
               <img alt="" src="Images/Final%20Hour%203.png"/>
+            </button>
+
+            <button class="thumb thumb-video" type="button"
+              data-type="video"
+              data-src="finalhour-video.mp4"
+              data-poster="Images/FinalHourHome.png"
+              data-caption="Gameplay video"
+              aria-label="Show video">
+              <img alt="" src="Images/FinalHourHome.png"/>
+              <span class="thumb-play" aria-hidden="true">▶</span>
             </button>
           </div>
 
+          <p class="case-note" style="margin-top:10px;">
+            Video file must exist at <code>finalhour-video.mp4</code>. Keep filenames lowercase on GitHub Pages.
+          </p>
         </div>
 
       </div>
-    </div>
     </div>
 
 <h2 class="evidence-title">Case studies</h2>
@@ -162,6 +181,8 @@
 </section>
 
 
+
+
 <script>
 (function(){
   function initGallery(root){
@@ -175,45 +196,45 @@
     const prevBtn = root.querySelector('.gallery-nav.prev');
     const nextBtn = root.querySelector('.gallery-nav.next');
 
-    if((!imgEl && !videoEl) || thumbs.length === 0) return;
+    if(!imgEl || !videoEl || !videoSource || thumbs.length === 0) return;
 
     let index = thumbs.findIndex(t => t.classList.contains('active'));
     if(index < 0) index = 0;
 
     function stopVideo(){
-      if(!videoEl) return;
-      try { videoEl.pause(); } catch(e) {}
+      try { videoEl.pause(); } catch(_) {}
+    }
+
+    function showImage(src, cap){
+      stopVideo();
+      videoEl.style.display = 'none';
+      imgEl.style.display = 'block';
+      if(src) imgEl.src = src;
+      imgEl.alt = cap ? ('Final Hour — ' + cap) : 'Final Hour screenshot';
+    }
+
+    function showVideo(src, poster, cap){
+      imgEl.style.display = 'none';
+      videoEl.style.display = 'block';
+      if(poster) videoEl.setAttribute('poster', poster);
+      if(src && videoSource.getAttribute('src') !== src){
+        videoSource.setAttribute('src', src);
+        try { videoEl.load(); } catch(_) {}
+      }
+      // Do not autoplay. User starts playback via controls.
     }
 
     function setActive(i){
-      stopVideo();
-
       index = Math.max(0, Math.min(thumbs.length - 1, i));
       const t = thumbs[index];
 
       const type = t.getAttribute('data-type') || 'image';
-      const src = t.getAttribute('data-src');
+      const src = t.getAttribute('data-src') || '';
       const cap = t.getAttribute('data-caption') || '';
       const poster = t.getAttribute('data-poster') || '';
 
-      if(type === 'video'){
-        if(imgEl) imgEl.style.display = 'none';
-        if(videoEl){
-          videoEl.style.display = 'block';
-          if(poster) videoEl.setAttribute('poster', poster);
-          if(videoSource && src && videoSource.getAttribute('src') !== src){
-            videoSource.setAttribute('src', src);
-            try { videoEl.load(); } catch(e) {}
-          }
-        }
-      } else {
-        if(videoEl) videoEl.style.display = 'none';
-        if(imgEl){
-          imgEl.style.display = 'block';
-          if(src) imgEl.src = src;
-          imgEl.alt = cap ? ('Final Hour — ' + cap) : 'Final Hour screenshot';
-        }
-      }
+      if(type === 'video') showVideo(src, poster, cap);
+      else showImage(src, cap);
 
       if(captionText) captionText.textContent = cap;
       if(countEl) countEl.textContent = (index + 1) + ' / ' + thumbs.length;

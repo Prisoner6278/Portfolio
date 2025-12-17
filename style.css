@@ -780,3 +780,37 @@ body {
   display: block;
   background: #000;
 }
+
+
+/* Gallery: video thumb play indicator */
+.thumb-video{
+  position: relative;
+}
+.thumb-video .thumb-play{
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  line-height: 1;
+  border: 1px solid rgba(255,255,255,0.35);
+}
+
+/* Gallery: ensure video uses full width */
+.gallery-video{
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #000;
+}
+
+/* Safety: allow clicking the video controls */
+.gallery-main, .gallery-figure, .gallery-image, .gallery-video{
+  pointer-events: auto;
+}
