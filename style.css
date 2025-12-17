@@ -896,3 +896,7 @@ body {
 }
 
 .case-row .case-card{ height: 100%; }
+
+
+/* Resume: grouped skills emphasis */
+.project-bullets b{ color: var(--text); font-weight: 700; }
