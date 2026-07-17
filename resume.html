@@ -16,9 +16,13 @@
 <button aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle menu" class="nav-toggle" type="button">
 <img class="hamburger-icon" src="hamburger.png" alt="Menu">
 </button><nav aria-label="Primary right" class="nav right" id="primaryNav">
-<a class="nav-link" href="index.html">Profile</a>
-<a aria-current="page" class="nav-link" href="resume.html">Resume</a>
-<a class="nav-link" href="contact.html">Contact</a>
+<div class="lang-switch" role="group" aria-label="Language / 언어">
+<button aria-pressed="false" class="lang-btn" data-lang="ko" type="button">한국어</button>
+<button aria-pressed="true" class="lang-btn" data-lang="en" type="button">English</button>
+</div>
+<a class="nav-link" href="index.html" data-i18n="nav.profile">Profile</a>
+<a aria-current="page" class="nav-link" href="resume.html" data-i18n="nav.resume">Resume</a>
+<a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a>
 <a aria-label="LinkedIn profile (opens in a new tab)" class="icon-link" href="https://www.linkedin.com/in/do-hwi-lee-244042229/" rel="noopener noreferrer" target="_blank">
 <svg aria-hidden="true" class="icon" role="img" viewBox="0 0 24 24">
 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.37-1.852 3.6 0 4.265 2.368 4.265 5.455v6.288zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.814 20.452H3.86V9h2.954v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"></path>
@@ -29,17 +33,17 @@
 </header>
 <main class="container" style="padding-top: 36px; padding-bottom: 84px;">
 <p style="margin: 14px 0 0;">
-<a class="text-link" download="Resume.pdf" href="Resume.pdf">Download PDF</a>
+<a class="text-link" id="resumeDownload" data-i18n="resume.downloadPdf" data-href-en="Resume_English.pdf" data-href-ko="Resume_한국어.pdf" download="Resume_English.pdf" href="Resume_English.pdf">Download PDF</a>
 </p>
 
 <section aria-label="Experience" style="margin-top: 34px;">
-<h2 class="section-title" style="text-align:left;">Experience</h2>
+<h2 class="section-title" data-i18n="resume.experience" style="text-align:left;">Experience</h2>
 <article style="margin-top: 18px;">
 <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;">
 <h3 style="margin:0; font-size: 18px; font-weight: 650;">Young Horses / Localization QA</h3>
 <div style="color: var(--muted);">Jan 2023 – June 2023</div>
 </div>
-<ul class="project-bullets" style="margin-top: 10px;">
+<ul class="project-bullets" data-i18n-html="resume.job1.bullets" style="margin-top: 10px;">
     <li>
         Partnered with developers using MemoQ to identify and resolve cultural and linguistic localization issues across two
         shipped titles, Octodad and Bugsnax.
@@ -51,7 +55,7 @@
 <h3 style="margin:0; font-size: 18px; font-weight: 650;">DePaul Original Game Studio / Producer and Production Support</h3>
 <div style="color: var(--muted);">Sep 2022 – Nov 2023</div>
 </div>
-<ul class="project-bullets" style="margin-top: 10px;">
+<ul class="project-bullets" data-i18n-html="resume.job2.bullets" style="margin-top: 10px;">
     <li>
         Led an 11-member cross-functional team of programmers, artists, writers, and sound designers throughout a 15-month Agile game development project, delivering Final Hour from concept to release.
     </li>
@@ -71,7 +75,7 @@
 <h3 style="margin:0; font-size: 18px; font-weight: 650;">Anthos Capital / Game Tester</h3>
 <div style="color: var(--muted);">June 2020 – September 2020</div>
 </div>
-<ul class="project-bullets" style="margin-top: 10px;">
+<ul class="project-bullets" data-i18n-html="resume.job3.bullets" style="margin-top: 10px;">
     <li>
         Streamlined the bug triage workflow in Jira by prioritizing high-severity issues and producing detailed reproducibility
         reports, unblocking engineering teams and accelerating release cycles.
@@ -84,28 +88,28 @@
 </article>
 </section>
 <section aria-label="Education" style="margin-top: 44px;">
-<h2 class="section-title" style="text-align:left;">Education</h2>
+<h2 class="section-title" data-i18n="resume.education" style="text-align:left;">Education</h2>
 <article style="margin-top: 18px;">
 <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;">
 <h3 style="margin:0; font-size: 18px; font-weight: 650;">DePaul University / Game and Interactive Media Design</h3>
 <div style="color: var(--muted);">Jan 2019 – June 2023</div>
 </div>
-<ul class="project-bullets" style="margin-top: 10px;">
+<ul class="project-bullets" data-i18n-html="resume.education1.bullets" style="margin-top: 10px;">
 <li>Computer Science + Screenwriting Minor | GPA: 3.6</li>
 </ul>
 </article>
 </section>
 <section aria-label="Skills" style="margin-top: 44px;">
-<h2 class="section-title" style="text-align:left;">Skills</h2>
-<ul class="project-bullets" style="margin-top: 14px;">
+<h2 class="section-title" data-i18n="resume.skills" style="text-align:left;">Skills</h2>
+<ul class="project-bullets" data-i18n-html="resume.skills.list" style="margin-top: 14px;">
   <li><b>Production:</b> Agile/Scrum, documentation, decision logs, risk tracking (RAID)</li>
   <li><b>QA / Localization:</b> CAT tools, localization QA, test case writing, verification</li>
   <li><b>Tools:</b> Jira, Trello, Perforce, GitHub, Google Workspace, Microsoft Office</li>
 </ul>
 </section>
 <section aria-label="Military Service" style="margin-top: 44px;">
-<h2 class="section-title" style="text-align:left;">Military Service</h2>
-<p style="margin-top: 14px; color: var(--text);">
+<h2 class="section-title" data-i18n="resume.military" style="text-align:left;">Military Service</h2>
+<p data-i18n="resume.military.text" style="margin-top: 14px; color: var(--text);">
     Mandatory military service, Republic of Korea Army — July 2024 to January 2026.
 </p>
 </section>

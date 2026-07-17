@@ -17,14 +17,18 @@
 <div class="container header-inner">
 <div aria-label="Site name" class="brand brand-with-role">
                     Do Hwi Lee
-                    <span class="brand-role">Producer / Production Support</span>
+                    <span class="brand-role" data-i18n="brand.producerRole">Producer / Production Support</span>
 </div>
 <button aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle menu" class="nav-toggle" type="button">
 <img class="hamburger-icon" src="hamburger.png" alt="Menu">
 </button><nav aria-label="Primary right" class="nav right" id="primaryNav">
-<a class="nav-link" href="index.html#resume">Profile</a>
-<a class="nav-link" href="resume.html">Resume</a>
-<a class="nav-link" href="contact.html">Contact</a>
+<div class="lang-switch" role="group" aria-label="Language / 언어">
+<button aria-pressed="false" class="lang-btn" data-lang="ko" type="button">한국어</button>
+<button aria-pressed="true" class="lang-btn" data-lang="en" type="button">English</button>
+</div>
+<a class="nav-link" href="index.html#resume" data-i18n="nav.profile">Profile</a>
+<a class="nav-link" href="resume.html" data-i18n="nav.resume">Resume</a>
+<a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a>
 <a aria-label="LinkedIn profile (opens in a new tab)" class="icon-link" href="https://www.linkedin.com/in/do-hwi-lee-244042229/" rel="noopener noreferrer" target="_blank">
 <svg aria-hidden="true" class="icon" role="img" viewbox="0 0 24 24">
 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.37-1.852 3.6 0 4.265 2.368 4.265 5.455v6.288zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.814 20.452H3.86V9h2.954v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"></path>
@@ -38,8 +42,8 @@
 <div class="container">
 <div class="case-grid">
 <div class="case-block">
-<h2>Core responsibilities</h2>
-<ul class="project-bullets">
+<h2 data-i18n="producer.coreResponsibilities.title">Core responsibilities</h2>
+<ul class="project-bullets" data-i18n-html="producer.coreResponsibilities.bullets">
 <li>Owned milestone planning and a weekly cadence (priorities, blockers, dependencies).</li>
 <li>Structured work breakdown (epics → tasks) with clear acceptance criteria.</li>
 <li>Supported ship readiness by clarifying risks, scope boundaries, and next actions.</li>
@@ -47,7 +51,7 @@
 </ul>
 </div>
 <div class="case-block">
-  <h2>Final Hour media</h2>
+  <h2 data-i18n="producer.media.title">Final Hour media</h2>
 
   <div class="gallery" data-gallery aria-label="Final Hour media gallery" tabindex="0">
     <div class="gallery-main">
@@ -108,12 +112,12 @@
 </div>
 </div>
 <div class="case-block">
-<h2>Supporting case</h2>
+<h2 data-i18n="producer.supportingCase.title">Supporting case</h2>
 <div class="case-row">
 
 <div class="case-card">
-  <h3>Case 01 — Milestone slippage control</h3>
-  <ul class="project-bullets">
+  <h3 data-i18n="producer.case1.title">Case 01 — Milestone slippage control</h3>
+  <ul class="project-bullets" data-i18n-html="producer.case1.bullets">
     <li><b>Context:</b> Milestones started slipping due to unclear weekly priorities and ownership across disciplines.</li>
     <li><b>Actions:</b> Set up a weekly planning cadence in Trello (by week), assigned owners, and used discipline labels to surface blockers early.</li>
     <li><b>Impact:</b> <b>Reduced milestone delay frequency</b> by improving visibility and tightening weekly execution.</li>
@@ -122,13 +126,13 @@
 
   <figure class="artifact" data-lightbox>
     <img src="Images/trello_board.png" alt="Trello weekly board view showing week-based lists, labels, and assignees."/>
-    <figcaption class="artifact-caption">Trello board view — weekly planning cadence.</figcaption>
+    <figcaption class="artifact-caption" data-i18n="producer.case1.caption">Trello board view — weekly planning cadence.</figcaption>
   </figure>
 </div>
 
 <div class="case-card">
-  <h3>Case 02 — Scope reduction to hit ship date</h3>
-  <ul class="project-bullets">
+  <h3 data-i18n="producer.case2.title">Case 02 — Scope reduction to hit ship date</h3>
+  <ul class="project-bullets" data-i18n-html="producer.case2.bullets">
     <li><b>Context:</b> Narrative scope threatened the schedule late in the milestone.</li>
     <li><b>Actions:</b> Cut a small number of characters / lines and re-baselined remaining work to protect the release date.</li>
     <li><b>Impact:</b> <b>Reduced workload</b> and kept the project on track for an on-time release.</li>
@@ -137,13 +141,13 @@
 
   <figure class="artifact" data-lightbox>
     <img src="Images/trello_table.png" alt="Trello table view with cards, lists, labels, members, and due dates."/>
-    <figcaption class="artifact-caption">Trello table view — task-level tracking.</figcaption>
+    <figcaption class="artifact-caption" data-i18n="producer.case2.caption">Trello table view — task-level tracking.</figcaption>
   </figure>
 </div>
 
 <div class="case-card">
-  <h3>Case 03 — Pipeline improvement for narrative updates</h3>
-  <ul class="project-bullets">
+  <h3 data-i18n="producer.case3.title">Case 03 — Pipeline improvement for narrative updates</h3>
+  <ul class="project-bullets" data-i18n-html="producer.case3.bullets">
     <li><b>Stakeholders:</b> Lead Narrative, Programmer, Art.</li>
     <li><b>Change:</b> Implemented a CSV-to-Unity update flow to reduce manual edits and keep content updates consistent.</li>
     <li><b>Impact:</b> Improved turnaround time for narrative updates and reduced manual error risk during iteration.</li>
@@ -152,7 +156,7 @@
 
   <figure class="artifact" data-lightbox>
     <img src="Images/trello_dashboard.png" alt="Trello dashboard charts showing cards per list, per due date, per member, and per label."/>
-    <figcaption class="artifact-caption">Trello dashboard — distribution and progress snapshot.</figcaption>
+    <figcaption class="artifact-caption" data-i18n="producer.case3.caption">Trello dashboard — distribution and progress snapshot.</figcaption>
   </figure>
 </div>
 </div>
