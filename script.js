@@ -107,158 +107,154 @@ document.addEventListener('DOMContentLoaded', () => {
     'nav.profile': { en: 'Profile', ko: '프로필' },
     'nav.resume': { en: 'Resume', ko: '이력서' },
     'nav.contact': { en: 'Contact', ko: '연락처' },
-    'brand.producerRole': { en: 'Producer / Production Support', ko: '프로듀서 / 프로덕션 서포트' },
-    'brand.localizationRole': { en: 'Localization / QA', ko: '로컬라이제이션 / QA' },
+    'brand.producerRole': { en: 'Project Manager', ko: '프로젝트 매니저' },
+    'brand.localizationRole': { en: 'Localization QA', ko: '로컬라이제이션 QA' },
 
     // index.html
     'index.hero': {
-      en: `I am a <span class="lede-emph">Producer / Production Coordinator</span> who specializes in turning ambiguity into shippable plans. I focus on clear ownership, lightweight documentation, and crisp cross team communication.
+      en: `Hi, I'm Do Hwi — a bilingual (Korean/English) <span class="lede-emph">Project &amp; Operations Coordinator</span> who turns loose goals into clear plans and keeps teams on schedule.`,
+      ko: `안녕하세요, 이도휘입니다. 막연한 목표를 구체적인 계획으로 정리하고 팀이 일정을 지키도록 돕는, 한국어·영어 이중언어 <span class="lede-emph">프로젝트·운영 코디네이터</span>입니다.`
+    },
+    'index.heroSub': {
+      en: `At DePaul, I ran the roadmap and weekly cadence for an 11-person team across engineering, design, art, writing, and audio, delivering 8 milestones on schedule over 10 months. At Young Horses, I caught and closed 50+ Korean localization issues across Octodad and Bugsnax before launch, following each one through fix, re-test, and approval.
         <br />
         <br />
-        My approach is rooted in precision and reliability. Whether I'm managing high stakes data
-        protocols with zero margin for error or streamlining localization
-        for global hits like Bugsnax, I ensure the pipeline stays clear. I've collaborated closely
-        with development teams to identify and resolve cultural and linguistic localization issues
-        before they reach players.
+        I'm now looking for project coordination and operations roles where clear ownership and reliable follow-through matter.`,
+      ko: `DePaul 재학 중에는 프로그래밍, 디자인, 아트, 시나리오, 사운드를 아우르는 11명 규모 팀의 로드맵과 주간 계획을 운영하며, 10개월 동안 8건의 마일스톤을 모두 일정 내에 완수했습니다. Young Horses에서는 Octodad와 Bugsnax의 한국어 현지화 이슈 50건 이상을 출시 전에 찾아내고, 각 이슈를 수정·재검수·승인까지 끝까지 추적했습니다.
         <br />
         <br />
-        I\u2019m familiar with tools such as, <span class="lede-emph">Jira, Trello, and MemoQ</span> and love owning the full loop from discovery to verification.`,
-      ko: `저는 모호함을 실행 가능한 계획으로 바꾸는 것을 전문으로 하는 <span class="lede-emph">프로듀서 / 프로덕션 코디네이터</span>입니다. 명확한 오너십, 가벼운 문서화, 그리고 명료한 팀 간 커뮤니케이션에 집중합니다.
-        <br />
-        <br />
-        저의 접근 방식은 정확성과 신뢰성을 기반으로 합니다. 오차가 허용되지 않는 고위험 데이터 프로토콜을 관리하든, Bugsnax와 같은 글로벌 히트작의 로컬라이제이션 프로세스를 체계화하든, 파이프라인이 항상 명확하게 유지되도록 합니다. 개발팀과 긴밀히 협업하며 문화적·언어적 로컬라이제이션 이슈를 플레이어에게 닿기 전에 찾아내고 해결해 왔습니다.
-        <br />
-        <br />
-        <span class="lede-emph">Jira, Trello, MemoQ</span> 등 다양한 툴에 익숙하며, 발견부터 검증까지 전체 과정을 책임지는 것을 좋아합니다.`
+        앞으로는 명확한 책임 분담과 끝까지 챙기는 실행력이 중요한 프로젝트 코디네이션 및 운영 직무에서 일하고 싶습니다.`
     },
     'index.projects.title': { en: 'Notable Projects', ko: '주요 프로젝트' },
 
-    'index.project1.title': { en: 'Producer / Production Support', ko: '프로듀서 / 프로덕션 서포트' },
+    'index.project1.title': { en: 'Project Management — Final Hour', ko: '프로젝트 매니지먼트 — Final Hour' },
     'index.project1.desc': {
-      en: 'Kept cross-functional teams aligned through lightweight documentation, milestone tracking, and clear ownership—reducing ambiguity and unblocking delivery.',
-      ko: '가벼운 문서화, 마일스톤 트래킹, 명확한 오너십을 통해 크로스펑셔널 팀의 정렬을 유지하며 모호함을 줄이고 딜리버리를 원활하게 진행했습니다.'
+      en: 'Ran the roadmap and weekly planning cadence for an 11-member cross-functional team over a 10-month cycle, delivering 8 major milestones on schedule.',
+      ko: '11명 규모 다기능 팀의 로드맵과 주간 계획 체계를 약 10개월간 운영하며, 8건의 주요 마일스톤을 모두 일정 내에 완수했습니다.'
     },
     'index.project1.bullets': {
-      en: `<li>Maintained project docs and coordination rhythms (updates, handoffs, decision logs)</li>
-<li>Facilitated collaboration between writing/design without blocking development</li>
-<li>Supported \u201cship readiness\u201d by clarifying scope, risks, and next actions</li>`,
-      ko: `<li>프로젝트 문서와 협업 리듬(업데이트, 핸드오프, 의사결정 로그)을 관리했습니다</li>
-<li>개발 진행을 막지 않으면서 기획/디자인 간 협업을 조율했습니다</li>
-<li>범위, 리스크, 다음 액션을 명확히 하여 \u201c출시 준비\u201d를 지원했습니다</li>`
+      en: `<li>Tracked velocity and milestone data across 42 planning/review cycles to flag schedule risk early</li>
+<li>Re-scoped lower-priority work through 3+ unexpected resource constraints</li>
+<li>Resolved cross-team dependencies across engineering, design, art, writing, and audio</li>`,
+      ko: `<li>42회의 계획·리뷰 사이클에 걸쳐 벨로시티와 마일스톤 데이터를 추적하고 일정 리스크를 조기에 식별</li>
+<li>3건 이상의 예기치 못한 리소스 제약 상황에서 우선순위가 낮은 작업의 범위를 재조정</li>
+<li>프로그래밍, 디자인, 아트, 시나리오, 사운드 팀 간 의존관계를 조율</li>`
     },
 
-    'index.project2.title': { en: 'Localization QA — Korean Consistency Pass', ko: '로컬라이제이션 QA — 한국어 표현 정합성 점검' },
+    'index.project2.title': { en: 'Localization QA — Octodad & Bugsnax (ko-KR)', ko: '로컬라이제이션 QA — Octodad & Bugsnax (ko-KR)' },
     'index.project2.desc': {
-      en: 'I ran a Korean consistency pass to make the player-facing experience read naturally—clear, consistent, and culturally appropriate.',
-      ko: '플레이어가 자연스럽게 느낄 수 있도록 명확하고 일관되며 문화적으로 적절한 한국어 표현이 되도록 정합성 점검을 진행했습니다.'
+      en: 'Reviewed English-to-Korean localization quality for 2 shipped titles, resolving 50+ quality issues before launch.',
+      ko: '출시작 2종의 영어→한국어 현지화 품질을 검수하여 50건 이상의 품질 이슈를 출시 전에 해결했습니다.'
     },
     'index.project2.bullets': {
-      en: `<li>Flagged terminology, tone, spacing, UI truncation, and cultural context mismatches</li>
-<li>Wrote actionable notes for implementation with examples and recommended alternatives</li>
-<li>Collaborated with stakeholders to resolve high-impact player-facing issues</li>`,
-      ko: `<li>용어, 어조, 띄어쓰기, UI 텍스트 잘림, 문화적 맥락 불일치를 식별했습니다</li>
-<li>예시와 대안을 포함한 실행 가능한 수정 노트를 작성했습니다</li>
-<li>이해관계자와 협업하여 플레이어에게 영향이 큰 이슈를 해결했습니다</li>`
+      en: `<li>Flagged subtitles that did not match scene context or character emotion, plus terminology, tone, and UI issues</li>
+<li>Wrote actionable notes with recommended alternatives in MemoQ</li>
+<li>Tracked fix, re-test, and approval status with the dev team through final delivery</li>`,
+      ko: `<li>장면 맥락이나 캐릭터 감정과 맞지 않는 자막, 용어·어조·UI 이슈를 식별</li>
+<li>MemoQ에서 대안 표현을 포함한 실행 가능한 수정 노트를 작성</li>
+<li>개발팀과 이슈의 수정·재검수·승인 상태를 최종 납품까지 추적</li>`
     },
 
-    'index.project3.title': { en: 'Unannounced Title (NDA) — Game Testing / QA Verification', ko: '미공개 타이틀(NDA) — 게임 테스트 / QA 검증' },
+    'index.project3.title': { en: 'Game Testing / QA — Title under NDA', ko: '게임 테스트 / QA — NDA 비공개 타이틀' },
     'index.project3.desc': {
-      en: 'Tested pre-release builds and wrote high-signal bug reports with clear repro steps, severity, and environment details—then verified fixes across iterative builds.',
-      ko: '출시 전 빌드를 테스트하고 명확한 재현 절차, 심각도, 환경 정보를 포함한 정확도 높은 버그 리포트를 작성했으며, 이후 반복되는 빌드에서 수정 사항을 검증했습니다.'
+      en: 'Maintained product stability across a full test cycle for a portfolio company of Anthos Capital by authoring 12 structured test and regression plans.',
+      ko: 'Anthos Capital 포트폴리오사 프로젝트에서 12건의 구조화된 테스트·회귀 테스트 계획을 작성하여 전체 테스트 사이클 동안 제품 안정성을 유지했습니다.'
     },
     'index.project3.bullets': {
-      en: `<li>Functional / regression / exploratory testing across gameplay &amp; UI flows</li>
-<li>Authored tickets with Steps, Expected vs Actual, Repro Rate, Severity/Priority</li>
-<li>Supported triage with dev/production; validated fixes and tracked regressions to closure</li>`,
-      ko: `<li>게임플레이 및 UI 플로우 전반에 대한 기능/회귀/탐색적 테스트를 수행했습니다</li>
-<li>재현 절차, 기대 결과 대 실제 결과, 재현율, 심각도/우선순위를 포함한 티켓을 작성했습니다</li>
-<li>개발/프로덕션과 트리아지를 지원했으며, 수정 사항을 검증하고 회귀 이슈를 종결까지 추적했습니다</li>`
+      en: `<li>Functional, regression, and exploratory testing across gameplay and UI flows</li>
+<li>Bug reports with steps, expected vs. actual, repro rate, and severity</li>
+<li>Verified fixes across iterative builds and tracked regressions to closure</li>`,
+      ko: `<li>게임플레이 및 UI 플로우 전반의 기능·회귀·탐색적 테스트</li>
+<li>재현 절차, 기대 결과 대비 실제 결과, 재현율, 심각도를 포함한 버그 리포트 작성</li>
+<li>반복 빌드에서 수정 사항을 검증하고 회귀 이슈를 종결까지 추적</li>`
     },
 
     // resume.html
+    'resume.headline': { en: 'Project & Operations Coordinator', ko: '프로젝트 및 운영 코디네이터' },
+    'resume.summary': {
+      en: 'Bilingual (Korean/English) coordinator experienced in managing cross-functional teams, external partner relationships, and full project lifecycles — translating stakeholder needs into actionable plans and keeping delivery on schedule through KPI and milestone tracking.',
+      ko: '한국어와 영어에 능통한 코디네이터로서 다기능 팀 운영, 외부 파트너 관계 관리, 프로젝트 전 주기 관리 경험을 보유하고 있습니다. 이해관계자의 요구사항을 실행 가능한 계획으로 전환하고, KPI 및 마일스톤 트래킹을 통해 일정 준수를 이끌어 왔습니다.'
+    },
     'resume.downloadPdf': { en: 'Download PDF', ko: 'PDF 다운로드' },
-    'resume.experience': { en: 'Experience', ko: '경력' },
+    'resume.experience': { en: 'Experience', ko: '경력사항' },
     'resume.education': { en: 'Education', ko: '학력' },
     'resume.skills': { en: 'Skills', ko: '보유 역량' },
-    'resume.military': { en: 'Military Service', ko: '병역 사항' },
+    'resume.military': { en: 'Military Service', ko: '병역사항' },
 
-    'resume.job1.bullets': {
-      en: `<li>
-        Partnered with developers using MemoQ to identify and resolve cultural and linguistic localization issues across two
-        shipped titles, Octodad and Bugsnax.
-    </li>`,
-      ko: `<li>
-        MemoQ를 활용해 개발자와 협업하며 Octodad와 Bugsnax 두 출시작 전반에서 문화적·언어적 로컬라이제이션 이슈를 발견하고 해결했습니다.
-    </li>`
-    },
+    'resume.job2.title': { en: 'Project Manager | DePaul Original Game Studio', ko: '프로젝트 매니저 | DePaul Original Game Studio' },
     'resume.job2.bullets': {
-      en: `<li>
-        Led an 11-member cross-functional team of programmers, artists, writers, and sound designers throughout a 15-month Agile game development project, delivering Final Hour from concept to release.
-    </li>
-    <li>
-        Defined and managed the production roadmap, 9 major milestones, and weekly sprint cadence, balancing scope, schedule, and resource constraints throughout development.
-    </li>
-    <li>
-        Facilitated 60+ one-week Scrum sprints, leading sprint planning, backlog prioritization, progress reviews, and retrospectives while monitoring team velocity and milestone completion.
-    </li>
-    <li>
-        Reduced schedule risk by re-scoping lower-priority work, resolving cross-functional dependencies, and reallocating tasks during unexpected resource constraints, ensuring on-time project delivery.
-    </li>`,
-      ko: `<li>
-        프로그래머, 아티스트, 작가, 사운드 디자이너로 구성된 11명 규모의 크로스펑셔널 팀을 15개월간의 애자일 게임 개발 프로젝트 전반에서 이끌며 Final Hour를 기획부터 출시까지 완성했습니다.
-    </li>
-    <li>
-        프로덕션 로드맵, 9개의 주요 마일스톤, 주간 스프린트 주기를 정의하고 관리하며 개발 전 과정에서 범위, 일정, 리소스 제약의 균형을 맞췄습니다.
-    </li>
-    <li>
-        60회 이상의 1주 단위 스크럼 스프린트를 진행하며 스프린트 계획, 백로그 우선순위화, 진행 리뷰, 회고를 이끌었고 팀 벨로시티와 마일스톤 완료 현황을 관리했습니다.
-    </li>
-    <li>
-        예상치 못한 리소스 제약 상황에서 우선순위가 낮은 작업의 범위를 재조정하고, 부서 간 의존성을 해결하며, 작업을 재배분하여 일정 리스크를 줄이고 프로젝트를 제때 완료했습니다.
-    </li>`
+      en: `<li>Delivered 8 major project milestones on schedule across a 10-month cycle by building and running the end-to-end project roadmap and weekly planning cadence for an 11-member cross-functional team (engineering, design, art, writing, and audio).</li>
+    <li>Protected delivery timelines through 3+ unexpected resource constraints by re-scoping lower-priority work and resolving cross-team dependencies in real time.</li>
+    <li>Identified and corrected recurring schedule risk patterns across 42 planning/review cycles by tracking team velocity and milestone data to flag inefficiencies before they hit deadlines.</li>`,
+      ko: `<li>프로그래밍, 디자인, 아트, 시나리오, 사운드 등 11명 규모의 다기능 팀을 위한 전체 프로젝트 로드맵과 주간 계획 체계를 구축·운영하여, 약 10개월 일정 동안 8건의 주요 마일스톤을 모두 일정 내에 완수했습니다.</li>
+    <li>3건 이상의 예기치 못한 리소스 제약 상황에서 우선순위가 낮은 작업의 범위를 재조정하고 팀 간 의존관계를 실시간으로 해결하여 일정을 지켰습니다.</li>
+    <li>총 42회의 계획·리뷰 사이클에 걸쳐 팀 벨로시티와 마일스톤 데이터를 추적하고, 반복되는 일정 리스크 패턴을 마감 전에 식별·개선했습니다.</li>`
     },
+    'resume.job1.title': { en: 'Localization Quality Assurance Specialist | Young Horses', ko: '로컬라이제이션 QA | Young Horses' },
+    'resume.job1.bullets': {
+      en: `<li>Reviewed English-to-Korean localization quality for 2 titles (Octodad, Bugsnax), resolving 50+ quality issues before launch, including subtitles that did not match scene context or character emotion.</li>
+    <li>Tracked fix, re-test, and approval status for each issue with the development team through final delivery, eliminating unresolved issues that could have blocked release.</li>`,
+      ko: `<li>Octodad, Bugsnax 2개 제품의 영어→한국어 현지화 품질을 검수하여, 장면 맥락이나 캐릭터 감정과 맞지 않는 자막 등 50건 이상의 품질 이슈를 출시 전에 해결했습니다.</li>
+    <li>개발팀과 이슈의 수정·재검수·승인 상태를 최종 납품까지 추적하여, 출시를 막을 수 있는 미해결 이슈를 사전에 제거했습니다.</li>`
+    },
+    'resume.job3.title': { en: 'Game Tester / QA Analyst | Anthos Capital', ko: '게임 테스터 / QA 애널리스트 | Anthos Capital' },
+    'resume.job3.note': { en: 'Portfolio company engagement; title and product under NDA', ko: '포트폴리오사 참여 프로젝트 (제품명 및 타이틀 NDA로 비공개)' },
     'resume.job3.bullets': {
-      en: `<li>
-        Streamlined the bug triage workflow in Jira by prioritizing high-severity issues and producing detailed reproducibility
-        reports, unblocking engineering teams and accelerating release cycles.
-    </li>
-    <li>
-        Authored comprehensive test plans and regression reports that maintained build stability throughout active
-        development cycles.
-    </li>`,
-      ko: `<li>
-        Jira에서 심각도가 높은 이슈를 우선순위화하고 상세한 재현 리포트를 작성하여 버그 트리아지 워크플로우를 효율화했으며, 엔지니어링 팀의 병목을 해소하고 릴리스 주기를 단축했습니다.
-    </li>
-    <li>
-        포괄적인 테스트 플랜과 회귀 리포트를 작성하여 활발한 개발 주기 동안 빌드 안정성을 유지했습니다.
-    </li>`
+      en: `<li>Maintained product stability across a full test cycle by authoring 12 structured test and regression plans.</li>`,
+      ko: `<li>12건의 구조화된 테스트·회귀 테스트 계획을 작성하여 전체 테스트 사이클 동안 제품 안정성을 유지했습니다.</li>`
+    },
+    'resume.education1.title': {
+      en: 'Bachelor of Arts, Game and Interactive Media Design | DePaul University, Chicago, IL',
+      ko: '게임 및 인터랙티브 미디어 디자인 학사 | DePaul University, 시카고(일리노이주)'
     },
     'resume.education1.bullets': {
-      en: `<li>Computer Science + Screenwriting Minor | GPA: 3.6</li>`,
-      ko: `<li>컴퓨터공학 전공 + 시나리오 부전공 | 학점: 3.6</li>`
+      en: `<li><b>Minors:</b> Computer Science, Screenwriting · GPA 3.6</li>
+<li><b>Relevant coursework:</b> Production Planning, Project Management, Resource &amp; Risk Management, Agile Development</li>`,
+      ko: `<li><b>부전공:</b> 컴퓨터공학, 시나리오 · 학점 3.6</li>
+<li><b>관련 과목:</b> 프로덕션 플래닝, 프로젝트 매니지먼트, 리소스·리스크 매니지먼트, 애자일 개발</li>`
     },
     'resume.skills.list': {
-      en: `<li><b>Production:</b> Agile/Scrum, documentation, decision logs, risk tracking (RAID)</li>
-  <li><b>QA / Localization:</b> CAT tools, localization QA, test case writing, verification</li>
-  <li><b>Tools:</b> Jira, Trello, Perforce, GitHub, Google Workspace, Microsoft Office</li>`,
-      ko: `<li><b>프로덕션:</b> 애자일/스크럼, 문서화, 의사결정 로그, 리스크 트래킹(RAID)</li>
-  <li><b>QA / 로컬라이제이션:</b> CAT 툴, 로컬라이제이션 QA, 테스트 케이스 작성, 검증</li>
-  <li><b>툴:</b> Jira, Trello, Perforce, GitHub, Google Workspace, Microsoft Office</li>`
+      en: `<li><b>Planning &amp; Scheduling:</b> Project roadmap &amp; milestone management, resource allocation, capacity planning, risk assessment &amp; mitigation, KPI tracking, data-informed decision making, process improvement</li>
+  <li><b>Partner &amp; Stakeholder Coordination:</b> External partner/vendor coordination, cross-functional alignment, client &amp; stakeholder communication, issue triage &amp; sign-off management</li>
+  <li><b>Core Tools:</b> Microsoft Excel/Office, Google Workspace, Jira, Trello, Confluence</li>
+  <li><b>Additional Tools:</b> Perforce, GitHub, MemoQ</li>
+  <li><b>Languages:</b> Korean (native) · English (fluent, professional working proficiency)</li>`,
+      ko: `<li><b>기획 및 일정 관리:</b> 프로젝트 로드맵·마일스톤 관리, 리소스 배분, 캐파시티 플래닝, 리스크 평가 및 대응, KPI 트래킹, 데이터 기반 의사결정, 프로세스 개선</li>
+  <li><b>파트너·이해관계자 조율:</b> 외부 파트너/벤더 조율, 크로스펑셔널 협업, 클라이언트·이해관계자 커뮤니케이션, 이슈 트리아지 및 승인 관리</li>
+  <li><b>주요 툴:</b> Microsoft Excel/Office, Google Workspace, Jira, Trello, Confluence</li>
+  <li><b>기타 툴:</b> Perforce, GitHub, MemoQ</li>
+  <li><b>언어:</b> 한국어(모국어) · 영어(유창, 전문 업무 가능 수준)</li>`
     },
-    'resume.military.text': {
-      en: 'Mandatory military service, Republic of Korea Army — July 2024 to January 2026.',
-      ko: '대한민국 육군 의무 복무 — 2024년 7월 ~ 2026년 1월'
-    },
+    'resume.military.title': { en: 'Operations Specialist | Republic of Korea Army', ko: '운영 담당 | 대한민국 육군' },
+    'resume.military.text': { en: 'Mandatory military service', ko: '의무 복무' },
 
     // producer.html
+    'producer.hero.title': { en: 'Final Hour — Project Management', ko: 'Final Hour — 프로젝트 매니지먼트' },
+    'producer.hero.lede': {
+      en: 'Built and ran the end-to-end roadmap and weekly planning cadence for an 11-member cross-functional team, delivering 8 major milestones on schedule across a 10-month cycle.',
+      ko: '11명 규모 다기능 팀을 위한 전체 로드맵과 주간 계획 체계를 구축·운영하여, 약 10개월 동안 8건의 주요 마일스톤을 모두 일정 내에 완수했습니다.'
+    },
+    'meta.project': { en: 'Project', ko: '프로젝트' },
+    'meta.role': { en: 'Role', ko: '역할' },
+    'meta.team': { en: 'Team', ko: '팀' },
+    'meta.duration': { en: 'Duration', ko: '기간' },
+    'meta.outcome': { en: 'Outcome', ko: '성과' },
+    'meta.tools': { en: 'Tools', ko: '툴' },
+    'producer.meta.role': { en: 'Project Manager', ko: '프로젝트 매니저' },
+    'producer.meta.team': { en: '11 members (engineering, design, art, writing, audio)', ko: '11명 (프로그래밍, 디자인, 아트, 시나리오, 사운드)' },
+    'producer.meta.duration': { en: 'Sep 2022 – Jun 2023 (10 months)', ko: '2022.09 – 2023.06 (약 10개월)' },
+    'producer.meta.outcome': { en: '8/8 major milestones on schedule', ko: '주요 마일스톤 8건 모두 일정 내 완수' },
+
     'producer.coreResponsibilities.title': { en: 'Core responsibilities', ko: '핵심 업무' },
     'producer.coreResponsibilities.bullets': {
-      en: `<li>Owned milestone planning and a weekly cadence (priorities, blockers, dependencies).</li>
+      en: `<li>Owned the project roadmap, milestone planning, and a weekly cadence (priorities, blockers, dependencies).</li>
 <li>Structured work breakdown (epics → tasks) with clear acceptance criteria.</li>
-<li>Supported ship readiness by clarifying risks, scope boundaries, and next actions.</li>
+<li>Tracked velocity and milestone data across 42 planning/review cycles to flag schedule risk before deadlines.</li>
+<li>Supported release readiness by clarifying risks, scope boundaries, and next actions.</li>
 <li>Established triage + verification habits to reduce regressions and improve release confidence.</li>`,
-      ko: `<li>마일스톤 계획과 주간 진행 리듬(우선순위, 블로커, 의존성)을 담당했습니다.</li>
-<li>명확한 승인 기준과 함께 작업 분해 구조(에픽 → 태스크)를 체계화했습니다.</li>
+      ko: `<li>프로젝트 로드맵, 마일스톤 계획, 주간 진행 리듬(우선순위, 블로커, 의존성)을 담당했습니다.</li>
+<li>명확한 완료 기준과 함께 작업 분해 구조(에픽 → 태스크)를 체계화했습니다.</li>
+<li>42회의 계획·리뷰 사이클에 걸쳐 벨로시티와 마일스톤 데이터를 추적해 마감 전에 일정 리스크를 식별했습니다.</li>
 <li>리스크, 범위 경계, 다음 액션을 명확히 하여 출시 준비를 지원했습니다.</li>
 <li>회귀를 줄이고 출시 신뢰도를 높이기 위한 트리아지 및 검증 습관을 정착시켰습니다.</li>`
     },
@@ -269,16 +265,16 @@ document.addEventListener('DOMContentLoaded', () => {
     'producer.case1.bullets': {
       en: `<li><b>Context:</b> Milestones started slipping due to unclear weekly priorities and ownership across disciplines.</li>
     <li><b>Actions:</b> Set up a weekly planning cadence in Trello (by week), assigned owners, and used discipline labels to surface blockers early.</li>
-    <li><b>Impact:</b> <b>Reduced milestone delay frequency</b> by improving visibility and tightening weekly execution.</li>
+    <li><b>Impact:</b> <b>8 of 8 major milestones delivered on schedule</b> by improving visibility and tightening weekly execution.</li>
     <li><b>Evidence:</b> Trello weekly board (planning cadence + ownership).</li>`,
       ko: `<li><b>배경:</b> 직군 간 주간 우선순위와 담당자가 명확하지 않아 마일스톤이 지연되기 시작했습니다.</li>
     <li><b>액션:</b> Trello에 주 단위 계획 리듬을 구축하고, 담당자를 지정했으며, 직군별 라벨을 사용해 블로커를 조기에 파악했습니다.</li>
-    <li><b>임팩트:</b> 가시성을 높이고 주간 실행력을 강화하여 <b>마일스톤 지연 빈도를 줄였습니다.</b></li>
+    <li><b>임팩트:</b> 가시성을 높이고 주간 실행력을 강화하여 <b>주요 마일스톤 8건을 모두 일정 내에 완수했습니다.</b></li>
     <li><b>근거자료:</b> Trello 주간 보드(계획 리듬 + 담당자 배정).</li>`
     },
     'producer.case1.caption': { en: 'Trello board view — weekly planning cadence.', ko: 'Trello 보드 뷰 — 주간 계획 리듬.' },
 
-    'producer.case2.title': { en: 'Case 02 — Scope reduction to hit ship date', ko: 'Case 02 — 출시 일정 준수를 위한 스코프 조정' },
+    'producer.case2.title': { en: 'Case 02 — Scope reduction to protect the release date', ko: 'Case 02 — 출시일을 지키기 위한 스코프 조정' },
     'producer.case2.bullets': {
       en: `<li><b>Context:</b> Narrative scope threatened the schedule late in the milestone.</li>
     <li><b>Actions:</b> Cut a small number of characters / lines and re-baselined remaining work to protect the release date.</li>
@@ -326,7 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // thanks.html
     'thanks.title': { en: 'Thank you', ko: '감사합니다' },
     'thanks.body': {
-      en: "Your message has been sent. I\u2019ll get back to you as soon as I can.",
+      en: "Your message has been sent. I’ll get back to you as soon as I can.",
       ko: '메시지가 전송되었습니다. 최대한 빠르게 답변드리겠습니다.'
     },
     'thanks.back': { en: 'Back to Contact', ko: '연락처로 돌아가기' }

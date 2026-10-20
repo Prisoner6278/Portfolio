@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -217,7 +217,7 @@
 <button aria-pressed="false" class="lang-btn" data-lang="ko" type="button">한국어</button>
 <button aria-pressed="true" class="lang-btn" data-lang="en" type="button">English</button>
 </div>
-<a class="nav-link" href="index.html#resume" data-i18n="nav.profile">Profile</a>
+<a class="nav-link" href="index.html" data-i18n="nav.profile">Profile</a>
 <a class="nav-link" href="resume.html" data-i18n="nav.resume">Resume</a>
 <a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a>
 <a aria-label="LinkedIn profile (opens in a new tab)" class="icon-link" href="https://www.linkedin.com/in/do-hwi-lee-244042229/" rel="noopener noreferrer" target="_blank">
@@ -236,7 +236,7 @@
 <section aria-label="Project metadata" class="meta-grid">
 <div class="meta-row"><div class="meta-k">Project</div><div class="meta-v">Game Localization QA</div></div>
 <div class="meta-row"><div class="meta-k">Locale</div><div class="meta-v">ko-KR</div></div>
-<div class="meta-row"><div class="meta-k">Role</div><div class="meta-v">Producer / QA</div></div>
+<div class="meta-row"><div class="meta-k">Role</div><div class="meta-v">Localization QA Specialist</div></div>
 <div class="meta-row"><div class="meta-k">Deliverables</div><div class="meta-v">Issue reporting, fix proposal, verification</div></div>
 <div class="meta-row"><div class="meta-k">Methods</div><div class="meta-v">Repro steps, evidence, expected vs actual, severity</div></div>
 <div class="meta-row"><div class="meta-k">Coverage</div><div class="meta-v">Dialog / Quest guidance / Stability</div></div>
@@ -252,9 +252,9 @@
 <!-- One image only -->
 <section class="section">
 <div class="hero-img">
-<img alt="Evidence screenshot (single image)" src="Images/번역 1.png"/>
+<img alt="In-game dialog screenshot showing the mistranslated Korean subtitle from Case 01" src="Images/번역 1.png"/>
 </div>
-<div class="img-cap">Figure 1.</div>
+<div class="img-cap">Figure 1. In-game dialog for Case 01. The mistranslated Korean line appears in the subtitle.</div>
 </section>
 <div class="divider"></div>
 <section class="section">
@@ -290,7 +290,7 @@
 <strong>Issue</strong>
 <ul class="bullets">
 <li><strong>Meaning shift:</strong> “get your ring” (obtain/retrieve) is translated as “wear/put on.”</li>
-<li><strong>Player impact:</strong> Objective text is correct, so there is no progression impact. However, the dialog briefly suggests an incorrect character's emotion by sounding cheerful but the voice sound does not. It reduces clarity and immersion.</li>
+<li><strong>Player impact:</strong> The objective text is correct, so progression is not affected. However, the Korean line reads as cheerful while the voice-over does not, so the subtitle no longer matches the character&rsquo;s emotion. This tone mismatch reduces clarity and immersion.</li>
 </ul>
 </div>
 <div style="margin-top:12px;">
@@ -303,14 +303,14 @@
 <div style="margin-top:12px;">
 <strong>Evidence</strong>
 <p style="margin:6px 0 0; color:var(--muted);">
-                        See Figure 1. The text above is where the problem is.
+                        See Figure 1. The mistranslated line is the subtitle shown on screen.
                     </p>
 </div>
 </article>
 <article class="case-card">
 <h3 style="margin:0 0 6px; font-size:16px;">Case 02 — Functional Bug: Alt+Tab Causes Program Exit</h3>
 <p style="margin:0 0 10px; color:var(--text);">
-                    The application closes when the user switches focus with Alt+Tab. This is a high-severity stability issue because it blocks normal PC usage patterns.
+                    The application closes when the user switches focus with Alt+Tab. This is a high-severity stability issue because Alt+Tab is a standard PC usage pattern.
                 </p>
 <div aria-label="Tags" class="tagrow">
 <span class="tag">Type: Functional</span>
@@ -324,7 +324,7 @@
 <ul class="bullets">
 <li><strong>OS:</strong> Windows 11 Pro</li>
 <li><strong>Display Mode:</strong> Fullscreen</li>
-<li><strong>Repro Rate:</strong>Often</li>
+<li><strong>Repro Rate:</strong> Intermittent</li>
 </ul>
 </div>
 <br/>
