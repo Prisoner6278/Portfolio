@@ -116,11 +116,11 @@ document.addEventListener('DOMContentLoaded', () => {
       ko: `안녕하세요, 이도휘입니다. 막연한 목표를 구체적인 계획으로 정리하고 팀이 일정을 지키도록 돕는, 한국어·영어 이중언어 <span class="lede-emph">프로젝트·운영 코디네이터</span>입니다.`
     },
     'index.heroSub': {
-      en: `At DePaul, I ran the roadmap and weekly cadence for an 11-person team across engineering, design, art, writing, and audio, delivering 8 milestones on schedule over 10 months. At Young Horses, I caught and closed 50+ Korean localization issues across Octodad and Bugsnax before launch, following each one through fix, re-test, and approval.
+      en: `In a DePaul university team project, I ran the roadmap and weekly cadence for an 11-person team across engineering, design, art, writing, and audio, delivering 8 milestones on schedule over 10 months. At Young Horses, I caught and closed 50+ Korean localization issues across Octodad and Bugsnax before launch, following each one through fix, re-test, and approval.
         <br />
         <br />
         I'm now looking for project coordination and operations roles where clear ownership and reliable follow-through matter.`,
-      ko: `DePaul 재학 중에는 프로그래밍, 디자인, 아트, 시나리오, 사운드를 아우르는 11명 규모 팀의 로드맵과 주간 계획을 운영하며, 10개월 동안 8건의 마일스톤을 모두 일정 내에 완수했습니다. Young Horses에서는 Octodad와 Bugsnax의 한국어 현지화 이슈 50건 이상을 출시 전에 찾아내고, 각 이슈를 수정·재검수·승인까지 끝까지 추적했습니다.
+      ko: `DePaul 재학 중 교내 팀 프로젝트에서 프로그래밍, 디자인, 아트, 시나리오, 사운드를 아우르는 11명 규모 팀의 로드맵과 주간 계획을 운영하며, 10개월 동안 8건의 마일스톤을 모두 일정 내에 완수했습니다. Young Horses에서는 Octodad와 Bugsnax의 한국어 현지화 이슈 50건 이상을 출시 전에 찾아내고, 각 이슈를 수정·재검수·승인까지 끝까지 추적했습니다.
         <br />
         <br />
         앞으로는 명확한 책임 분담과 끝까지 챙기는 실행력이 중요한 프로젝트 코디네이션 및 운영 직무에서 일하고 싶습니다.`
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <li>프로그래밍, 디자인, 아트, 시나리오, 사운드 팀 간 의존관계를 조율</li>`
     },
 
-    'index.project2.title': { en: 'Localization QA — Octodad & Bugsnax (ko-KR)', ko: '로컬라이제이션 QA — Octodad & Bugsnax (ko-KR)' },
+    'index.project2.title': { en: 'Localization QA — Octodad & Bugsnax (KR-ENG)', ko: '로컬라이제이션 QA — Octodad & Bugsnax (KR-ENG)' },
     'index.project2.desc': {
       en: 'Reviewed English-to-Korean localization quality for 2 shipped titles, resolving 50+ quality issues before launch.',
       ko: '출시작 2종의 영어→한국어 현지화 품질을 검수하여 50건 이상의 품질 이슈를 출시 전에 해결했습니다.'
@@ -177,11 +177,12 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     'resume.downloadPdf': { en: 'Download PDF', ko: 'PDF 다운로드' },
     'resume.experience': { en: 'Experience', ko: '경력사항' },
+    'resume.projectExperience': { en: 'Project Experience', ko: '프로젝트 경험' },
     'resume.education': { en: 'Education', ko: '학력' },
     'resume.skills': { en: 'Skills', ko: '보유 역량' },
     'resume.military': { en: 'Military Service', ko: '병역사항' },
 
-    'resume.job2.title': { en: 'Project Manager | DePaul Original Game Studio', ko: '프로젝트 매니저 | DePaul Original Game Studio' },
+    'resume.job2.title': { en: 'Project Manager | DePaul Original Game Studio (University Team Project)', ko: '프로젝트 매니저 | DePaul Original Game Studio (교내 팀 프로젝트)' },
     'resume.job2.bullets': {
       en: `<li>Delivered 8 major project milestones on schedule across a 10-month cycle by building and running the end-to-end project roadmap and weekly planning cadence for an 11-member cross-functional team (engineering, design, art, writing, and audio).</li>
     <li>Protected delivery timelines through 3+ unexpected resource constraints by re-scoping lower-priority work and resolving cross-team dependencies in real time.</li>
@@ -240,6 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'meta.duration': { en: 'Duration', ko: '기간' },
     'meta.outcome': { en: 'Outcome', ko: '성과' },
     'meta.tools': { en: 'Tools', ko: '툴' },
+    'producer.meta.project': { en: 'Final Hour (Unity), DePaul Original Game Studio (university team project)', ko: 'Final Hour (Unity), DePaul Original Game Studio (교내 팀 프로젝트)' },
     'producer.meta.role': { en: 'Project Manager', ko: '프로젝트 매니저' },
     'producer.meta.team': { en: '11 members (engineering, design, art, writing, audio)', ko: '11명 (프로그래밍, 디자인, 아트, 시나리오, 사운드)' },
     'producer.meta.duration': { en: 'Sep 2022 – Jun 2023 (10 months)', ko: '2022.09 – 2023.06 (약 10개월)' },
@@ -299,6 +301,82 @@ document.addEventListener('DOMContentLoaded', () => {
     <li><b>근거자료:</b> Trello 대시보드(작업 분포 + 라벨 커버리지).</li>`
     },
     'producer.case3.caption': { en: 'Trello dashboard — distribution and progress snapshot.', ko: 'Trello 대시보드 — 작업 분포 및 진행 현황.' },
+
+    // localization.html
+    'loc.title': { en: `Localization QA — Case Study`, ko: `로컬라이제이션 QA — 케이스 스터디` },
+    'loc.sub': { en: `Linguistic accuracy and stability findings documented in tracker-ready format.`, ko: `언어 정확성과 안정성 이슈를 트래커에 바로 등록할 수 있는 형식으로 정리했습니다.` },
+    'loc.meta.projectValue': { en: `Game Localization QA`, ko: `게임 로컬라이제이션 QA` },
+    'loc.meta.locale': { en: `Locale`, ko: `로케일` },
+    'loc.meta.roleValue': { en: `Localization QA Specialist`, ko: `로컬라이제이션 QA 담당` },
+    'loc.meta.deliverables': { en: `Deliverables`, ko: `산출물` },
+    'loc.meta.deliverablesValue': { en: `Issue reporting, fix proposal, verification`, ko: `이슈 리포팅, 수정 제안, 검증` },
+    'loc.meta.methods': { en: `Methods`, ko: `방법` },
+    'loc.meta.methodsValue': { en: `Repro steps, evidence, expected vs actual, severity`, ko: `재현 절차, 근거 자료, 기대 결과 대비 실제 결과, 심각도` },
+    'loc.meta.coverage': { en: `Coverage`, ko: `범위` },
+    'loc.meta.coverageValue': { en: `Dialog / Quest guidance / Stability`, ko: `대사 / 퀘스트 안내 / 안정성` },
+    'loc.overview.title': { en: `Overview`, ko: `개요` },
+    'loc.overview.body': { en: `This case study highlights two representative findings: (1) a linguistic localization issue where the player’s intended action changes due to mistranslation, and (2) a high-impact stability issue where Alt+Tab causes the program to exit.`, ko: `이 케이스 스터디는 대표적인 두 가지 발견 사항을 다룹니다. (1) 오역으로 인해 플레이어가 의도한 행동이 바뀌는 언어적 현지화 이슈, (2) Alt+Tab을 누르면 프로그램이 종료되는 영향도 높은 안정성 이슈입니다.` },
+    'loc.figure.caption': { en: `Figure 1. In-game dialog for Case 01. The mistranslated Korean line appears in the subtitle.`, ko: `그림 1. Case 01의 게임 내 대사 화면. 오역된 한국어 문장이 자막에 표시됩니다.` },
+    'loc.detail.title': { en: `Detailed Info`, ko: `상세 내용` },
+    'loc.case1.title': { en: `Case 01 — Linguistic Bug: Intent/Action Mistranslation`, ko: `Case 01 — 언어 버그: 의도/행동 오역` },
+    'loc.case1.desc': { en: `The Korean line shifts the intent from “go retrieve the ring” to “put on a ring,” which can mislead the player’s next action.`, ko: `한국어 대사가 “반지를 가지러 간다”는 의도를 “반지를 낀다”로 바꿔 버려, 플레이어의 다음 행동을 잘못 유도할 수 있습니다.` },
+    'loc.tag.linguistic': { en: `Type: Linguistic`, ko: `유형: 언어` },
+    'loc.tag.locale': { en: `Locale: KR-ENG`, ko: `로케일: KR-ENG` },
+    'loc.tag.dialog': { en: `Area: Dialog / Quest Hint`, ko: `영역: 대사 / 퀘스트 힌트` },
+    'loc.tag.minor': { en: `Severity: Minor`, ko: `심각도: 경미` },
+    'loc.label.sourceEn': { en: `Source (EN)`, ko: `원문 (EN)` },
+    'loc.label.currentKo': { en: `Current (KO)`, ko: `현재 (KO)` },
+    'loc.label.expectedKo': { en: `Expected (KO)`, ko: `권장 (KO)` },
+    'loc.label.issue': { en: `Issue`, ko: `이슈` },
+    'loc.case1.issueBullets': {
+      en: `<li><strong>Meaning shift:</strong> “get your ring” (obtain/retrieve) is translated as “wear/put on.”</li>
+<li><strong>Player impact:</strong> The objective text is correct, so progression is not affected. However, the Korean line reads as cheerful while the voice-over does not, so the subtitle no longer matches the character&rsquo;s emotion. This tone mismatch reduces clarity and immersion.</li>`,
+      ko: `<li><strong>의미 변화:</strong> “get your ring”(획득/가져오다)이 “wear/put on”(착용하다)으로 번역되었습니다.</li>
+<li><strong>플레이어 영향:</strong> 목표 텍스트는 올바르게 표시되어 진행에는 영향이 없습니다. 다만 한국어 대사는 밝은 어조로 읽히는 반면 보이스오버는 그렇지 않아, 자막이 캐릭터의 감정과 맞지 않게 됩니다. 이러한 어조 불일치는 명확성과 몰입감을 떨어뜨립니다.</li>`
+    },
+    'loc.label.recommendation': { en: `Recommendation`, ko: `권장 사항` },
+    'loc.case1.recBullets': {
+      en: `<li>Translate “get your ring” as <em>가지러 가다 / 챙기다 / 찾으러 가다</em> depending on context.</li>
+<li>Avoid “끼다” unless the source explicitly indicates <em>wear/put on</em>.</li>`,
+      ko: `<li>문맥에 따라 “get your ring”을 <em>가지러 가다 / 챙기다 / 찾으러 가다</em>로 번역합니다.</li>
+<li>원문이 <em>wear/put on</em>을 명시하는 경우가 아니라면 “끼다”는 사용하지 않습니다.</li>`
+    },
+    'loc.label.evidence': { en: `Evidence`, ko: `근거 자료` },
+    'loc.case1.evidence': { en: `See Figure 1. The mistranslated line is the subtitle shown on screen.`, ko: `그림 1을 참고하세요. 오역된 문장은 화면에 표시되는 자막입니다.` },
+    'loc.case2.title': { en: `Case 02 — Functional Bug: Alt+Tab Causes Program Exit`, ko: `Case 02 — 기능 버그: Alt+Tab 시 프로그램 종료` },
+    'loc.case2.desc': { en: `The application closes when the user switches focus with Alt+Tab. This is a high-severity stability issue because Alt+Tab is a standard PC usage pattern.`, ko: `Alt+Tab으로 화면을 전환하면 애플리케이션이 종료됩니다. Alt+Tab은 PC에서 일반적으로 쓰이는 사용 방식이므로 심각도가 높은 안정성 이슈입니다.` },
+    'loc.tag.functional': { en: `Type: Functional`, ko: `유형: 기능` },
+    'loc.tag.windows': { en: `Platform: Windows`, ko: `플랫폼: Windows` },
+    'loc.tag.input': { en: `Area: Input`, ko: `영역: 입력` },
+    'loc.tag.blocker': { en: `Severity: Blocker`, ko: `심각도: 블로커` },
+    'loc.label.environment': { en: `Environment`, ko: `환경` },
+    'loc.case2.envBullets': {
+      en: `<li><strong>OS:</strong> Windows 11 Pro</li>
+<li><strong>Display Mode:</strong> Fullscreen</li>
+<li><strong>Repro Rate:</strong> Intermittent</li>`,
+      ko: `<li><strong>OS:</strong> Windows 11 Pro</li>
+<li><strong>디스플레이 모드:</strong> 전체 화면</li>
+<li><strong>재현율:</strong> 간헐적</li>`
+    },
+    'loc.label.steps': { en: `Steps to Reproduce`, ko: `재현 절차` },
+    'loc.case2.steps': {
+      en: `<li>Launch the game.</li>
+<li>During gameplay, press <strong>Alt+Tab</strong> to switch to another application.</li>
+<li>Observe the game behavior during/after the focus change.</li>`,
+      ko: `<li>게임을 실행합니다.</li>
+<li>플레이 중 <strong>Alt+Tab</strong>을 눌러 다른 애플리케이션으로 전환합니다.</li>
+<li>포커스가 바뀌는 동안과 이후의 게임 동작을 관찰합니다.</li>`
+    },
+    'loc.label.actual': { en: `Actual Result`, ko: `실제 결과` },
+    'loc.case2.actual': { en: `The program exits (crash / unexpected termination).`, ko: `프로그램이 종료됩니다(크래시 / 비정상 종료).` },
+    'loc.label.expected': { en: `Expected Result`, ko: `기대 결과` },
+    'loc.case2.expected': { en: `The game should remain running and recover focus cleanly when returning.`, ko: `게임이 계속 실행되고, 복귀할 때 포커스가 정상적으로 복구되어야 합니다.` },
+    'loc.case2.recBullets': {
+      en: `<li>Confirm reproduction by display mode: <em>Fullscreen / Borderless / Windowed</em>.</li>
+<li>This issue may be hardware-specific. Please reproduce on an alternate device configuration (different components) to determine whether it is device-dependent.</li>`,
+      ko: `<li>디스플레이 모드별(<em>전체 화면 / 테두리 없는 창 / 창 모드</em>)로 재현 여부를 확인합니다.</li>
+<li>하드웨어에 따라 발생하는 이슈일 수 있습니다. 구성이 다른 기기(부품이 다른 환경)에서 재현하여 기기 의존성 여부를 확인해 주세요.</li>`
+    },
 
     // contact.html
     'contact.title': { en: 'Contact', ko: '연락처' },

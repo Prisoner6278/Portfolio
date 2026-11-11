@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Do Hwi Lee | Localization QA Case Study</title>
-<meta content="Localization QA case study (ko-KR): issue discovery, documentation, fix recommendations, and verification in a tracker-ready format." name="description"/>
+<meta content="Localization QA case study (KR-ENG): issue discovery, documentation, fix recommendations, and verification in a tracker-ready format." name="description"/>
 <!-- Same head as index.html -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -231,19 +231,19 @@
 </div>
 <!-- Case Study -->
 <main class="case-wrap">
-<h1 class="case-title">Localization QA — Case Study</h1>
-<p class="case-sub">Linguistic accuracy and stability findings documented in tracker-ready format.</p>
+<h1 class="case-title" data-i18n="loc.title">Localization QA — Case Study</h1>
+<p class="case-sub" data-i18n="loc.sub">Linguistic accuracy and stability findings documented in tracker-ready format.</p>
 <section aria-label="Project metadata" class="meta-grid">
-<div class="meta-row"><div class="meta-k">Project</div><div class="meta-v">Game Localization QA</div></div>
-<div class="meta-row"><div class="meta-k">Locale</div><div class="meta-v">ko-KR</div></div>
-<div class="meta-row"><div class="meta-k">Role</div><div class="meta-v">Localization QA Specialist</div></div>
-<div class="meta-row"><div class="meta-k">Deliverables</div><div class="meta-v">Issue reporting, fix proposal, verification</div></div>
-<div class="meta-row"><div class="meta-k">Methods</div><div class="meta-v">Repro steps, evidence, expected vs actual, severity</div></div>
-<div class="meta-row"><div class="meta-k">Coverage</div><div class="meta-v">Dialog / Quest guidance / Stability</div></div>
+<div class="meta-row"><div class="meta-k" data-i18n="meta.project">Project</div><div class="meta-v" data-i18n="loc.meta.projectValue">Game Localization QA</div></div>
+<div class="meta-row"><div class="meta-k" data-i18n="loc.meta.locale">Locale</div><div class="meta-v">KR-ENG</div></div>
+<div class="meta-row"><div class="meta-k" data-i18n="meta.role">Role</div><div class="meta-v" data-i18n="loc.meta.roleValue">Localization QA Specialist</div></div>
+<div class="meta-row"><div class="meta-k" data-i18n="loc.meta.deliverables">Deliverables</div><div class="meta-v" data-i18n="loc.meta.deliverablesValue">Issue reporting, fix proposal, verification</div></div>
+<div class="meta-row"><div class="meta-k" data-i18n="loc.meta.methods">Methods</div><div class="meta-v" data-i18n="loc.meta.methodsValue">Repro steps, evidence, expected vs actual, severity</div></div>
+<div class="meta-row"><div class="meta-k" data-i18n="loc.meta.coverage">Coverage</div><div class="meta-v" data-i18n="loc.meta.coverageValue">Dialog / Quest guidance / Stability</div></div>
 </section>
 <section class="section">
-<h2>Overview</h2>
-<p>
+<h2 data-i18n="loc.overview.title">Overview</h2>
+<p data-i18n="loc.overview.body">
                 This case study highlights two representative findings:
                 (1) a linguistic localization issue where the player’s intended action changes due to mistranslation,
                 and (2) a high-impact stability issue where Alt+Tab causes the program to exit.
@@ -254,82 +254,82 @@
 <div class="hero-img">
 <img alt="In-game dialog screenshot showing the mistranslated Korean subtitle from Case 01" src="Images/번역 1.png"/>
 </div>
-<div class="img-cap">Figure 1. In-game dialog for Case 01. The mistranslated Korean line appears in the subtitle.</div>
+<div class="img-cap" data-i18n="loc.figure.caption">Figure 1. In-game dialog for Case 01. The mistranslated Korean line appears in the subtitle.</div>
 </section>
 <div class="divider"></div>
 <section class="section">
-<h2>Detailed Info</h2>
+<h2 data-i18n="loc.detail.title">Detailed Info</h2>
 <article class="case-card">
-<h3 style="margin:0 0 6px; font-size:16px;">Case 01 — Linguistic Bug: Intent/Action Mistranslation</h3>
-<p style="margin:0 0 10px; color:var(--text);">
+<h3 style="margin:0 0 6px; font-size:16px;" data-i18n="loc.case1.title">Case 01 — Linguistic Bug: Intent/Action Mistranslation</h3>
+<p style="margin:0 0 10px; color:var(--text);" data-i18n="loc.case1.desc">
                     The Korean line shifts the intent from “go retrieve the ring” to “put on a ring,” which can mislead the player’s next action.
                 </p>
 <div aria-label="Tags" class="tagrow">
-<span class="tag">Type: Linguistic</span>
-<span class="tag">Locale: ko-KR</span>
-<span class="tag">Area: Dialog / Quest Hint</span>
-<span class="tag">Severity: Minor</span>
+<span class="tag" data-i18n="loc.tag.linguistic">Type: Linguistic</span>
+<span class="tag" data-i18n="loc.tag.locale">Locale: KR-ENG</span>
+<span class="tag" data-i18n="loc.tag.dialog">Area: Dialog / Quest Hint</span>
+<span class="tag" data-i18n="loc.tag.minor">Severity: Minor</span>
 </div>
 <div class="grid-2" style="margin-top:12px;">
 <div>
-<strong>Source (EN)</strong>
+<strong data-i18n="loc.label.sourceEn">Source (EN)</strong>
 <div class="mono">Guess you have to get your ring yourselves.</div>
 </div>
 <div>
-<strong>Current (KO)</strong>
+<strong data-i18n="loc.label.currentKo">Current (KO)</strong>
 <div class="mono">그러면 이제 반지를 껴야겠네</div>
 </div>
 </div>
 <div style="margin-top:12px;">
-<strong>Expected (KO)</strong>
+<strong data-i18n="loc.label.expectedKo">Expected (KO)</strong>
 <div class="mono">
                         그러면 직접 반지를 가지러 가야겠네 or 그럼 반지는 당신이 직접 챙기러 가야겠네
                     </div>
 </div>
 <div style="margin-top:12px;">
-<strong>Issue</strong>
-<ul class="bullets">
+<strong data-i18n="loc.label.issue">Issue</strong>
+<ul class="bullets" data-i18n-html="loc.case1.issueBullets">
 <li><strong>Meaning shift:</strong> “get your ring” (obtain/retrieve) is translated as “wear/put on.”</li>
 <li><strong>Player impact:</strong> The objective text is correct, so progression is not affected. However, the Korean line reads as cheerful while the voice-over does not, so the subtitle no longer matches the character&rsquo;s emotion. This tone mismatch reduces clarity and immersion.</li>
 </ul>
 </div>
 <div style="margin-top:12px;">
-<strong>Recommendation</strong>
-<ul class="bullets">
+<strong data-i18n="loc.label.recommendation">Recommendation</strong>
+<ul class="bullets" data-i18n-html="loc.case1.recBullets">
 <li>Translate “get your ring” as <em>가지러 가다 / 챙기다 / 찾으러 가다</em> depending on context.</li>
 <li>Avoid “끼다” unless the source explicitly indicates <em>wear/put on</em>.</li>
 </ul>
 </div>
 <div style="margin-top:12px;">
-<strong>Evidence</strong>
-<p style="margin:6px 0 0; color:var(--muted);">
+<strong data-i18n="loc.label.evidence">Evidence</strong>
+<p style="margin:6px 0 0; color:var(--muted);" data-i18n="loc.case1.evidence">
                         See Figure 1. The mistranslated line is the subtitle shown on screen.
                     </p>
 </div>
 </article>
 <article class="case-card">
-<h3 style="margin:0 0 6px; font-size:16px;">Case 02 — Functional Bug: Alt+Tab Causes Program Exit</h3>
-<p style="margin:0 0 10px; color:var(--text);">
+<h3 style="margin:0 0 6px; font-size:16px;" data-i18n="loc.case2.title">Case 02 — Functional Bug: Alt+Tab Causes Program Exit</h3>
+<p style="margin:0 0 10px; color:var(--text);" data-i18n="loc.case2.desc">
                     The application closes when the user switches focus with Alt+Tab. This is a high-severity stability issue because Alt+Tab is a standard PC usage pattern.
                 </p>
 <div aria-label="Tags" class="tagrow">
-<span class="tag">Type: Functional</span>
-<span class="tag">Platform: Windows</span>
-<span class="tag">Area: Input</span>
-<span class="tag">Severity: Blocker</span>
+<span class="tag" data-i18n="loc.tag.functional">Type: Functional</span>
+<span class="tag" data-i18n="loc.tag.windows">Platform: Windows</span>
+<span class="tag" data-i18n="loc.tag.input">Area: Input</span>
+<span class="tag" data-i18n="loc.tag.blocker">Severity: Blocker</span>
 </div>
 <div style="margin-top:12px;">
 <div style="margin-top:12px;">
-<strong>Environment</strong>
-<ul class="bullets">
+<strong data-i18n="loc.label.environment">Environment</strong>
+<ul class="bullets" data-i18n-html="loc.case2.envBullets">
 <li><strong>OS:</strong> Windows 11 Pro</li>
 <li><strong>Display Mode:</strong> Fullscreen</li>
 <li><strong>Repro Rate:</strong> Intermittent</li>
 </ul>
 </div>
 <br/>
-<strong>Steps to Reproduce</strong>
-<ol class="bullets" style="padding-left: 18px;">
+<strong data-i18n="loc.label.steps">Steps to Reproduce</strong>
+<ol class="bullets" style="padding-left: 18px;" data-i18n-html="loc.case2.steps">
 <li>Launch the game.</li>
 <li>During gameplay, press <strong>Alt+Tab</strong> to switch to another application.</li>
 <li>Observe the game behavior during/after the focus change.</li>
@@ -337,17 +337,17 @@
 </div>
 <div class="grid-2" style="margin-top:12px;">
 <div>
-<strong>Actual Result</strong>
-<div class="mono">The program exits (crash / unexpected termination).</div>
+<strong data-i18n="loc.label.actual">Actual Result</strong>
+<div class="mono" data-i18n="loc.case2.actual">The program exits (crash / unexpected termination).</div>
 </div>
 <div>
-<strong>Expected Result</strong>
-<div class="mono">The game should remain running and recover focus cleanly when returning.</div>
+<strong data-i18n="loc.label.expected">Expected Result</strong>
+<div class="mono" data-i18n="loc.case2.expected">The game should remain running and recover focus cleanly when returning.</div>
 </div>
 </div>
 <div style="margin-top:12px;">
-<strong>Recommendation</strong>
-<ul class="bullets">
+<strong data-i18n="loc.label.recommendation">Recommendation</strong>
+<ul class="bullets" data-i18n-html="loc.case2.recBullets">
 <li>Confirm reproduction by display mode: <em>Fullscreen / Borderless / Windowed</em>.</li>
 <li>This issue may be hardware-specific. Please reproduce on an alternate device configuration (different components) to determine whether it is device-dependent.</li>
 </ul>
